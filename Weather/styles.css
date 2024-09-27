@@ -1,49 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root {
+  --primary: #282828;
+  --secondary: gray;
+  --invert: 90%;
+  --text: white;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", system-ui;
+  background-color: var(--primary);
 }
 
 .container {
   width: 80%;
   margin: auto;
 }
+
 .weather-wrapper {
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
+
 .top-wrapper {
   font-family: "Ubuntu", system-ui;
-  padding: 4rem;
   display: flex;
   justify-content: space-around;
   width: 100%;
   box-shadow: 7px 5px 5px gray, -2px 0 2em gray;
   border-radius: 12px;
+  padding: 4rem 0;
+}
+
+.details {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  flex-wrap: wrap;
 }
 
 .details div {
-  padding: 0.4rem;
-  border-radius: 6px;
-  background-color: lightgray;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  background-color: gray;
+  height: 21rem;
+  width: 18rem;
+  margin-top: 1rem;
 }
 
-.wind-wrapper {
+.details h3 img {
+  -webkit-filter: invert(var(--invert));
+  filter: invert(var(--invert));
+  width: 1rem;
+  margin-right: 0.3rem;
+  opacity: 1;
+}
+
+.details h3 {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+
+#wind-wrapper {
   width: 100%;
 }
 
 .left {
   text-align: center;
   width: 50%;
+  color: var(--text);
 }
 
 .left img {
   width: 10rem;
-}
-
-.right {
-  width: 50%;
 }
 
 .temp {
@@ -53,4 +87,64 @@ body {
 
 .city {
   font-size: 4em;
+}
+.right {
+  width: 50%;
+  margin: 2rem;
+  border-radius: 12px;
+  background-color: grey;
+}
+
+.forecast {
+  padding: 1.5rem 0;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  flex-direction: column;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+}
+
+.day img {
+  width: 4rem;
+  object-fit: cover;
+}
+
+.temp-bar-wrapper {
+  width: 14rem;
+  height: 0.4rem;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.temp-bar {
+  width: 7rem;
+  margin-left: 2rem;
+  background-image: linear-gradient(
+    to right,
+    hsla(180, 100%, 59%, 1),
+    hsla(55, 100%, 59%, 1) /* go down for red*/
+  );
+  height: 0.4rem;
+  border-radius: 18px;
+}
+
+.dayofweek {
+  color: white;
+  font-size: 1.35em;
+  margin-right: 0.5rem;
+}
+
+.low {
+  opacity: 0.5;
+}
+
+.high,
+.low {
+  color: white;
+  margin: 0.8rem;
+  font-size: 1.1em;
 }
