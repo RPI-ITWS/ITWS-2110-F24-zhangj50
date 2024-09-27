@@ -161,13 +161,10 @@ hr {
 }
 
 .temp-bar {
-  background-image: linear-gradient(
-    to right,
-    hsla(190, 100%, 80%, 1),
-    /*170-190*/ hsla(20, 100%, 59%, 1) 0-55
-  );
   height: 0.4rem;
   border-radius: 18px;
+  opacity: 0;
+  animation: temp-bar 2s forwards;
 }
 
 .dayofweek {
@@ -276,11 +273,31 @@ because I couldnt find an icon online
   height: 100%;
   transform: rotate(var(--degree));
   filter: invert(100%);
+  animation: wind 0.3s infinite alternate ease-in-out;
 }
 
 @media (max-width: 1375px) {
   .details > * {
     height: 18rem;
     width: 15rem;
+  }
+}
+
+@keyframes temp-bar {
+  from {
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wind {
+  from {
+    transform: rotate(var(--wind-upper));
+  }
+  to {
+    transform: rotate(var(--wind-lower));
   }
 }

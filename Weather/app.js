@@ -26,6 +26,7 @@ window.addEventListener("load", function () {
     root.style.setProperty("--invert", "90%");
     root.style.setProperty("--text", "white");
   }
+
   function hue(temperature) {
     if (63 < temperature && temperature < 100) {
       return [117 - temperature, 60];
@@ -130,6 +131,14 @@ window.addEventListener("load", function () {
 
       document.getElementById("pointer").querySelector("img").style.transform =
         "rotate(" + (135 + data.currentConditions.winddir) + "deg)";
+      root.style.setProperty(
+        "--wind-upper",
+        `${135 + data.currentConditions.winddir + 1}deg`
+      );
+      root.style.setProperty(
+        "--wind-lower",
+        `${135 + data.currentConditions.winddir - 1}deg`
+      );
       const forecast = document.querySelector(".forecast");
       let currDay = "";
       let dayInfo = {};
