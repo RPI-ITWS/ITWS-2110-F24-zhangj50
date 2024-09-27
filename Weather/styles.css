@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", system-ui;
+  background-color: var(--primary);
+}
+
+.container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: solid gray 1px;
+}
+.weather-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-wrapper {
+  background-color: var(--trinary);
+  font-family: "Ubuntu", system-ui;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 7px 5px 5px gray, -2px 0 2em gray;
+  border-radius: 12px;
+  padding: 4rem 0;
+}
+
+.details {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+  width: 99%;
+  flex-wrap: wrap;
+}
+
+.details > * {
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  background-color: var(--secondary);
+  height: 20rem;
+  width: 17rem;
+  margin-top: 1rem;
+}
+
+.details h3 img {
+  -webkit-filter: invert(var(--invert));
+  filter: invert(var(--invert));
+  width: 1rem;
+  margin-right: 0.3rem;
+  opacity: 1;
+}
+
+.details h3 {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+
+#wind-wrapper {
+  width: 100%;
+}
+
+.wind-main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.wind-left {
+  flex-grow: 1;
+}
+
+.wind-left hr {
+  width: 90%;
+}
+
+#wind-speed,
+#wind-gusts {
+  color: var(--text);
+  display: flex;
+}
+
+#wind-speed b,
+#wind-gusts b {
+  font-size: 5em;
+  margin: auto 1rem;
+}
+
+.wind-info {
+  margin-top: auto;
+  font-size: 1.2em;
+}
+
+.wind-info p {
+  margin: 1rem 0;
+}
+
+#mph {
+  color: rgb(166, 166, 166);
+}
+
+.left {
+  text-align: center;
+  width: 40%;
+  color: var(--text);
+}
+
+.left img {
+  width: 10rem;
+}
+
+.temp {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.city {
+  font-size: 4em;
+}
+
+.right {
+  width: 60%;
+  margin: 2rem;
+  border-radius: 12px;
+  background-color: var(--secondary);
+}
+
+.forecast {
+  padding: 1.5rem 0;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  flex-direction: column;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+}
+
+.day img {
+  width: 4rem;
+  object-fit: cover;
+}
+
+.temp-bar-wrapper {
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.temp-bar {
+  background-image: linear-gradient(
+    to right,
+    hsla(190, 100%, 80%, 1),
+    /*170-190*/ hsla(20, 100%, 59%, 1) 0-55
+  );
+  height: 0.4rem;
+  border-radius: 18px;
+}
+
+.dayofweek {
+  color: white;
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+  width: 16rem;
+}
+
+.low {
+  opacity: 0.5;
+}
+
+.high,
+.low {
+  color: white;
+  margin: 0.8rem;
+  font-size: 1.1em;
+}
+
+.box {
+  align-items: center;
+  color: var(--text);
+  text-align: center;
+}
+
+.box-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  flex-direction: column;
+}
+
+.extra-box-info {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+.box b {
+  margin: auto;
+  font-size: 6em;
+  font-weight: 600;
+}
+#small {
+  font-size: 0.6em;
+}
+/* 
+compass design used from https://cssdeck.com/labs/building-a-css3-compass
+because I couldnt find an icon online
+*/
+#compass {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  border: 10px solid #777;
+  background: radial-gradient(ellipse cover, white);
+  box-shadow: 0 0 4px #000, 0 0 1px 8px #ccc, 5px 10px 15px #48436f;
+  color: var(--text);
+}
+
+#compass span {
+  position: absolute;
+  font-weight: bold;
+}
+
+#compass span:nth-child(1) {
+  left: 95px;
+  top: 10px;
+}
+
+#compass span:nth-child(3) {
+  left: 95px;
+  bottom: 10px;
+}
+
+#compass span:nth-child(2) {
+  right: 15px;
+  top: 90px;
+}
+
+#compass span:nth-child(4) {
+  left: 15px;
+  top: 90px;
+}
+
+#pointer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+}
+
+#pointer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: rotate(var(--degree));
+  filter: invert(100%);
+}
+
+@media (max-width: 1375px) {
+  .details > * {
+    height: 18rem;
+    width: 15rem;
+  }
+}
