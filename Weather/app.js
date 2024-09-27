@@ -1,21 +1,188 @@
 window.addEventListener("load", function () {
   const API_KEY = "2647e6e2577161f590f6002bb89571cb";
+  const SECOND_KEY = "RLL7C39CSZU8F593DTZC6AZP3";
+  const root = document.querySelector(":root");
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  function setLight() {
+    root.style.setProperty("--primary", "rgb(132, 185, 206)");
+    root.style.setProperty("--secondary", "rgb(68, 108, 124)");
+    root.style.setProperty("--trinary", "rgb(42, 78, 92)");
+    root.style.setProperty("--invert", "90%");
+    root.style.setProperty("--text", "white");
+  }
+
+  function setDark() {
+    root.style.setProperty("--primary", "#040418");
+    root.style.setProperty("--secondary", "#3a3939");
+    root.style.setProperty("--trinary", "#101010");
+    root.style.setProperty("--invert", "90%");
+    root.style.setProperty("--text", "white");
+  }
+  function hue(temperature) {
+    if (63 < temperature && temperature < 100) {
+      return [117 - temperature, 60];
+    } else if (temperature <= 63 && temperature > 32) {
+      return [222 - temperature, 60];
+    } else if (temperature <= 32 && temperature > 20) {
+      return [222 - temperature, 60 + (temperature - 20) / 2];
+    } else if (temperature <= 20) {
+      return [190, 60];
+    } else {
+      return [17, 60];
+    }
+  }
   async function currentAPI(lat, lon) {
     const request = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
     );
+
     const response = request.json();
     response.then((data) => {
       console.log(data);
+      const currentTime = new Date();
+      const sunriseTime = new Date(data.sys.sunrise * 1000);
+      const sunsetTime = new Date(data.sys.sunset * 1000);
+      console.log(sunriseTime);
+      console.log(sunsetTime);
+
+      document.querySelector(
+        "#feels-like-number"
+      ).innerHTML = `${data.main.feels_like}&deg`;
+      document.querySelector("#rain-number").innerHTML = `${
+        data.rain ? data.rain["1h"] : 0
+      }"`;
+      document.querySelector("#viz-number").innerHTML = `${Math.round(
+        data.visibility / 1609
+      )}mi`;
+      document.querySelector(
+        "#hum-number"
+      ).innerHTML = `${data.main.humidity}%`;
+      const riseset = document.querySelector("#ss");
+      const sunTime = document.querySelector("#sun-time");
+      let ampm = "AM";
+      let hours = 0;
+      let minutes = 0;
+      if (currentTime < sunsetTime && currentTime > sunriseTime) {
+        riseset.innerHTML = `<span><img src="icons/sunset.png" alt="temp" /></span>
+                SUNSET`;
+        hours = sunsetTime.getHours();
+        minutes = sunsetTime.getMinutes();
+        if (hours > 12) {
+          ampm = "PM";
+          hours -= 12;
+        } else if (hours == 12) {
+          ampm = "PM";
+        } else if (hours == 0) {
+          hours = 12;
+        }
+        sunTime.innerHTML = `${hours}:${minutes} ${ampm}`;
+
+        setLight();
+      } else {
+        riseset.innerHTML = `<span><img src="icons/sunrise.png" alt="temp" /></span>
+                SUNRISE`;
+        hours = sunriseTime.getHours();
+        minutes = sunriseTime.getMinutes();
+
+        if (hours > 12) {
+          ampm = "PM";
+          hours -= 12;
+        } else if (hours == 12) {
+          ampm = "PM";
+        } else if (hours == 0) {
+          hours = 12;
+        }
+        sunTime.innerHTML = `${hours}:${minutes} ${ampm}`;
+        setDark();
+      }
+
+      document.querySelector(".temp").innerHTML = `${Math.round(
+        data.main.temp
+      )}&deg;`;
+      document.querySelector(".city").innerHTML = data.name;
+      document
+        .querySelector(".left")
+        .insertAdjacentHTML(
+          "beforeend",
+          `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" />`
+        );
     });
   }
   async function forecastAPI(lat, lon) {
     const request = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}?key=${SECOND_KEY}`
     );
     const response = request.json();
     response.then((data) => {
       console.log(data);
+      document.querySelector("#wind-speed-number").innerHTML =
+        data.currentConditions.windspeed;
+      document.querySelector("#wind-gust-number").innerHTML =
+        data.currentConditions.windgust;
+
+      document.getElementById("pointer").querySelector("img").style.transform =
+        "rotate(" + (135 + data.currentConditions.winddir) + "deg)";
+      const forecast = document.querySelector(".forecast");
+      let currDay = "";
+      let dayInfo = {};
+      let maxTemp = 0;
+      let minTemp = 200;
+      for (let i = 0; i < 7; ++i) {
+        dayInfo = data.days[i];
+        if (dayInfo.feelslikemax > maxTemp) {
+          maxTemp = dayInfo.feelslikemax;
+        }
+        if (dayInfo.feelslikemin < minTemp) {
+          minTemp = dayInfo.feelslikemin;
+        }
+        if (i == 0) currDay = "Today";
+        else
+          currDay = daysOfWeek[new Date(dayInfo.datetimeEpoch * 1000).getDay()];
+        forecast.insertAdjacentHTML(
+          "beforeend",
+          `<div class="day">
+                <p class="dayofweek">${currDay}</p>
+                <img
+                  src="weather/${dayInfo.icon}.png"
+                  alt=""
+                />
+                <p class="low">${Math.round(dayInfo.feelslikemin)}&deg;</p>
+                <div class="temp-bar-wrapper" ><div class="temp-bar" id="${i}"></div></div>
+                <p class="high">${Math.round(dayInfo.feelslikemax)}&deg;</p>
+              </div>`
+        );
+        if (i == 6) {
+          break;
+        }
+        forecast.insertAdjacentHTML("beforeend", "<hr/>");
+      }
+      const difference = maxTemp - minTemp;
+      let marginLeft, width, minHue, maxHue, minBrightness, maxBrightness;
+      let currBar;
+      for (let i = 0; i < 7; ++i) {
+        dayInfo = data.days[i];
+        marginLeft = ((dayInfo.feelslikemin - minTemp) * 100) / difference;
+        width =
+          ((dayInfo.feelslikemax - dayInfo.feelslikemin) * 100) / difference;
+        currBar = document.getElementById(`${i}`);
+        currBar.style.marginLeft = `${marginLeft}%`;
+        currBar.style.width = `${width}%`;
+
+        [minHue, minBrightness] = hue(dayInfo.feelslikemin);
+        [maxHue, maxBrightness] = hue(dayInfo.feelslikemax);
+        currBar.style.backgroundImage = `linear-gradient(
+        to right,
+        hsla(${minHue}, 100%, 59%, 1),
+        hsla(${maxHue}, 100%, 59%, 1)`;
+      }
     });
   }
   navigator.geolocation.getCurrentPosition((position) => {

@@ -12,33 +12,10 @@
           <div class="left">
             <h2 class="city">Troy</h2>
             <h3 class="temp">73&deg;</h3>
-            <img src="https://openweathermap.org/img/wn/10n@2x.png" alt="" />
           </div>
 
           <div class="right">
-            <div class="forecast">
-              <div class="day">
-                <p class="dayofweek">Today</p>
-                <img
-                  src="https://openweathermap.org/img/wn/10n@2x.png"
-                  alt=""
-                />
-                <p class="low">59&deg;</p>
-                <div class="temp-bar-wrapper"><div class="temp-bar"></div></div>
-                <p class="high">74&deg;</p>
-              </div>
-              <hr />
-              <div class="day">
-                <p class="dayofweek">Today</p>
-                <img
-                  src="https://openweathermap.org/img/wn/10n@2x.png"
-                  alt=""
-                />
-                <p class="low">59&deg;</p>
-                <div class="temp-bar-wrapper"><div class="temp-bar"></div></div>
-                <p class="high">74&deg;</p>
-              </div>
-            </div>
+            <div class="forecast"></div>
           </div>
         </div>
 
@@ -51,7 +28,7 @@
               <div class="wind-main">
                 <div class="wind-left">
                   <div id="wind-speed">
-                    <b>2</b>
+                    <b id="wind-speed-number"></b>
                     <div class="wind-info">
                       <p id="mph">MPH</p>
                       <p>Wind Speed</p>
@@ -59,7 +36,7 @@
                   </div>
                   <hr />
                   <div id="wind-gusts">
-                    <b>2</b>
+                    <b id="wind-gust-number"></b>
                     <div class="wind-info">
                       <p id="mph">MPH</p>
                       <p>Wind Gusts</p>
@@ -71,7 +48,9 @@
                   <span id="south">E</span>
                   <span id="east">S</span>
                   <span id="west">W</span>
-                  <div id="pointer"><img src="icons/arrow.png" alt="" /></div>
+                  <div id="pointer">
+                    <img src="icons/arrow.png" alt="compass pointer" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,7 +59,7 @@
                 <span><img src="icons/temp.png" alt="temp" /></span>FEELS LIKE
               </h3>
               <div class="box-info">
-                <b>73&deg;</b>
+                <b id="feels-like-number"></b>
               </div>
             </div>
             <div class="box">
@@ -89,7 +68,7 @@
                 PRECIPITATION
               </h3>
               <div class="box-info">
-                <b>1"</b>
+                <b id="rain-number"></b>
                 <p class="extra-box-info">in the last hour</p>
               </div>
             </div>
@@ -99,7 +78,7 @@
                 VISIBILITY
               </h3>
               <div class="box-info">
-                <b>11mi</b>
+                <b id="viz-number">11mi</b>
               </div>
             </div>
             <div class="box">
@@ -108,16 +87,16 @@
                 HUMIDITY
               </h3>
               <div class="box-info">
-                <b>96%</b>
+                <b id="hum-number"></b>
               </div>
             </div>
             <div class="box">
-              <h3>
+              <h3 id="ss">
                 <span><img src="icons/sunrise.png" alt="temp" /></span>
                 SUNRISE
               </h3>
               <div id="small" class="box-info">
-                <b>6:48 AM</b>
+                <b id="sun-time"></b>
               </div>
             </div>
             <div class="box">
