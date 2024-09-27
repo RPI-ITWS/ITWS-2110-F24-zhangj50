@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
-  --primary: #282828;
-  --secondary: gray;
+  --primary: #040418;
+  --secondary: #3a3939;
+  --trinary: #101010;
   --invert: 90%;
   --text: white;
 }
@@ -16,9 +17,14 @@ body {
 
 .container {
   width: 80%;
-  margin: auto;
+  margin: 3rem auto;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: solid gray 1px;
+}
 .weather-wrapper {
   width: 100%;
   display: flex;
@@ -26,6 +32,7 @@ body {
 }
 
 .top-wrapper {
+  background-color: var(--trinary);
   font-family: "Ubuntu", system-ui;
   display: flex;
   justify-content: space-around;
@@ -39,16 +46,16 @@ body {
   margin: 3rem auto;
   display: flex;
   justify-content: space-around;
-  width: 98%;
+  width: 99%;
   flex-wrap: wrap;
 }
 
-.details div {
+.details > * {
   padding: 1rem 2.5rem;
   border-radius: 12px;
-  background-color: gray;
-  height: 21rem;
-  width: 18rem;
+  background-color: var(--secondary);
+  height: 20rem;
+  width: 17rem;
   margin-top: 1rem;
 }
 
@@ -70,6 +77,46 @@ body {
   width: 100%;
 }
 
+.wind-main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.wind-left {
+  flex-grow: 1;
+}
+
+.wind-left hr {
+  width: 90%;
+}
+
+#wind-speed,
+#wind-gusts {
+  color: var(--text);
+  display: flex;
+}
+
+#wind-speed b,
+#wind-gusts b {
+  font-size: 5em;
+  margin: auto 1rem;
+}
+
+.wind-info {
+  margin-top: auto;
+  font-size: 1.2em;
+}
+
+.wind-info p {
+  margin: 1rem 0;
+}
+
+#mph {
+  color: rgb(166, 166, 166);
+}
+
 .left {
   text-align: center;
   width: 50%;
@@ -88,18 +135,19 @@ body {
 .city {
   font-size: 4em;
 }
+
 .right {
   width: 50%;
   margin: 2rem;
   border-radius: 12px;
-  background-color: grey;
+  background-color: var(--secondary);
 }
 
 .forecast {
   padding: 1.5rem 0;
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 80%;
   flex-direction: column;
 }
 
@@ -114,14 +162,14 @@ body {
 }
 
 .temp-bar-wrapper {
-  width: 14rem;
+  width: 100%;
   height: 0.4rem;
   border-radius: 12px;
   background-color: white;
 }
 
 .temp-bar {
-  width: 7rem;
+  width: 50%;
   margin-left: 2rem;
   background-image: linear-gradient(
     to right,
@@ -147,4 +195,101 @@ body {
   color: white;
   margin: 0.8rem;
   font-size: 1.1em;
+}
+
+.box {
+  align-items: center;
+  color: var(--text);
+  text-align: center;
+}
+
+.box-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  flex-direction: column;
+}
+
+.extra-box-info {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+.box b {
+  margin: auto;
+  font-size: 6em;
+  font-weight: 600;
+}
+#small {
+  font-size: 0.6em;
+}
+/* 
+compass design used from https://cssdeck.com/labs/building-a-css3-compass
+because I couldnt find an icon online
+*/
+#compass {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  border: 10px solid #777;
+  background: radial-gradient(ellipse cover, white);
+  box-shadow: 0 0 4px #000, 0 0 1px 8px #ccc, 5px 10px 15px #48436f;
+  color: var(--text);
+}
+
+#compass span {
+  position: absolute;
+  font-weight: bold;
+}
+
+#compass span:nth-child(1) {
+  left: 95px;
+  top: 10px;
+}
+
+#compass span:nth-child(3) {
+  left: 95px;
+  bottom: 10px;
+}
+
+#compass span:nth-child(2) {
+  right: 15px;
+  top: 90px;
+}
+
+#compass span:nth-child(4) {
+  left: 15px;
+  top: 90px;
+}
+
+#pointer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+}
+
+#pointer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: rotate(135deg);
+  filter: invert(100%);
+}
+
+@media (max-width: 1375px) {
+  .details > * {
+    height: 18rem;
+    width: 15rem;
+  }
 }
