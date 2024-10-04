@@ -13,7 +13,6 @@
 $data = file_get_contents('php://input');
 
 
-$jsonData = json_decode($data, true);
 
     $query = 'update weather set data=(?) where api = "current"';
     $statement = $db->prepare($query);
