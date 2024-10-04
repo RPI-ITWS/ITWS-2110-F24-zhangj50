@@ -7,17 +7,7 @@
   </head>
   <body>
   <?php 
-    $dbOk = false;
-    @$db = new mysqli('localhost', 'root', 'Password123', 'project');
-    if ($db->connect_error) { 
-      echo '
-      <div class="messages">
-        Could not connect to the database. Error: '; echo $db->connect_errno . ' -
-        ' . $db->connect_error . '
-      </div>';
-    } else {
-      $dbOk = true;
-    }
+
     ?>
     <form method="post" action="current.php">
       <button type="submit" id="current-button">Pull Current Weather</button>
