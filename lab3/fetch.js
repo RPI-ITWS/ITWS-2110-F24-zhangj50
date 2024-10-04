@@ -2,6 +2,7 @@ window.addEventListener("load", function () {
   const API_KEY = "2647e6e2577161f590f6002bb89571cb";
   const SECOND_KEY = "RLL7C39CSZU8F593DTZC6AZP3";
   const root = document.querySelector(":root");
+
   const daysOfWeek = [
     "Sunday",
     "Monday",
@@ -113,6 +114,11 @@ window.addEventListener("load", function () {
         document.querySelector(".temp").innerHTML = `${Math.round(
           data.main.temp
         )}&deg;`;
+        document.querySelector("#edit").addEventListener("click", function (e) {
+          const divSelector = document.querySelector(".main-degree");
+          tempCode = divSelector.innerHTML;
+          divSelector.innerHTML = `<input type="number" value=${data.main.temp}/>`;
+        });
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(
           ".image"
@@ -272,7 +278,8 @@ window.addEventListener("load", function () {
   document
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
-  document.querySelector("#edit").addEventListener("click", function (e) {});
+  let tempCode;
+
   useCurrentData();
   useForecastData();
 });
