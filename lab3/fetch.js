@@ -42,6 +42,7 @@ window.addEventListener("load", function () {
   }
 
   async function useCurrentData() {
+    console.log("asd");
     fetch("currentdata.php", {
       method: "POST",
     })
