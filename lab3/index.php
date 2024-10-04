@@ -14,6 +14,7 @@
     </form>
   <?php 
     $dbOk = false;
+    $db = new mysqli('localhost', 'phpmyadmin', 'Password123', 'weather');
 
     ?>
     
