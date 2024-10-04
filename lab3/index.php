@@ -15,15 +15,7 @@
   <?php 
     $dbOk = false;
     $db = new mysqli('localhost', 'root', 'Password123', 'weather');
-    if ($db->connect_error) { 
-      echo '
-      <div class="messages">
-        Could not connect to the database. Error: '; echo $db->connect_errno . ' -
-        ' . $db->connect_error . '
-      </div>';
-    } else {
-      $dbOk = true;
-    }
+
     ?>
     
     <div class="container">
