@@ -13,7 +13,7 @@
     $body = [
       'content' => $_POST
     ];
-    echo json_encode($body);
+    echo json_encode($_POST);
     $query = 'update weather set data=(?) where api = "forecast"';
     $statement = $db->prepare($query);
          // bind our variable to the question mark
