@@ -216,9 +216,9 @@ window.addEventListener("load", function () {
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
       );
       const response = request.json();
-      response.then((data) => {
+      response.then(async (data) => {
         console.log(data);
-        fetch("forecast.php", {
+        await fetch("forecast.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
