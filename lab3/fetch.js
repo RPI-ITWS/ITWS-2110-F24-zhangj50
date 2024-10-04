@@ -218,7 +218,7 @@ window.addEventListener("load", function () {
       const response = request.json();
       response.then(async (data) => {
         console.log(data);
-        await fetch("forecast.php", {
+        await fetch("current.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
