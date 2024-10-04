@@ -120,7 +120,7 @@ hr {
   margin: 1rem 0;
 }
 
-#mph {
+.mph {
   color: rgb(166, 166, 166);
 }
 
@@ -228,7 +228,7 @@ hr {
   font-size: 6em;
   font-weight: 600;
 }
-#small {
+.small b {
   font-size: 0.6em;
 }
 /* 
