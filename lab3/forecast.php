@@ -10,7 +10,10 @@
     } else {
       $dbOk = true;
     }
-    echo($_POST["body"]);
+    $body = [
+      'content' => $_POST["body"]
+    ];
+    echo json_encode($body);
     $query = 'update weather set data=(?) where api = "forecast"';
     $statement = $db->prepare($query);
          // bind our variable to the question mark
