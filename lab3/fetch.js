@@ -226,6 +226,7 @@ window.addEventListener("load", function () {
           body: JSON.stringify(data),
         })
           .then((d) => {
+            console.log(d);
             useCurrentData();
           })
           .catch((error) => {

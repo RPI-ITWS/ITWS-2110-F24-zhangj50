@@ -10,6 +10,7 @@
     } else {
       $dbOk = true;
     }
+    echo($_POST["body"]);
     $query = 'update weather set data=(?) where api = "forecast"';
     $statement = $db->prepare($query);
          // bind our variable to the question mark
@@ -18,4 +19,5 @@
    $statement->execute();
    $statement->close();
    $db->close();
+
 ?>
