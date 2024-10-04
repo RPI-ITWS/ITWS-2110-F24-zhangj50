@@ -11,7 +11,7 @@
       $dbOk = true;
     }
     $body = [
-      'content' => $_POST["body"]
+      'content' => $_POST
     ];
     echo json_encode($body);
     $query = 'update weather set data=(?) where api = "forecast"';
