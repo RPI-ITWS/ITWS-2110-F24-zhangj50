@@ -10,10 +10,12 @@
     } else {
       $dbOk = true;
     }
+    $data = file_get_contents('php://input');
+
     $query = 'update weather set data=(?) where api = "current"';
     $statement = $db->prepare($query);
          // bind our variable to the question mark
-   $statement->bind_param("s", $_POST["body"]);
+   $statement->bind_param("s", $data);
    // make it so:
    $statement->execute();
    $statement->close();
