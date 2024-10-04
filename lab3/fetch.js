@@ -130,7 +130,10 @@ window.addEventListener("load", function () {
                 body: JSON.stringify({
                   num: document.querySelector("#number-change").value,
                 }),
-              }).then((response) => useCurrentData());
+              }).then((response) => {
+                divSelector.innerHTML = tempCode;
+                useCurrentData();
+              });
             });
         });
         document.querySelector(".city").innerHTML = data.name;
