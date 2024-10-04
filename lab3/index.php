@@ -14,7 +14,7 @@
     </form>
   <?php 
     $dbOk = false;
-    @$db = new mysqli('localhost', 'root', 'Password123', 'weather');
+    $db = new mysqli('localhost', 'root', 'Password123', 'weather');
     if ($db->connect_error) { 
       echo '
       <div class="messages">
