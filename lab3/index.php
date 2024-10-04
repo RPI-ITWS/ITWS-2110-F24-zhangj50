@@ -30,6 +30,7 @@
           <div class="left">
             <h2 class="city">Troy</h2>
             <h3 class="temp">73&deg;</h3>
+            <div class="image"></div>
           </div>
 
           <div class="right">

@@ -111,12 +111,9 @@ window.addEventListener("load", function () {
           data.main.temp
         )}&deg;`;
         document.querySelector(".city").innerHTML = data.name;
-        document
-          .querySelector(".left")
-          .insertAdjacentHTML(
-            "beforeend",
-            `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" />`
-          );
+        document.querySelector(
+          ".image"
+        ).innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="weather icon" />`;
       })
       .catch((error) => {
         console.log(error);
