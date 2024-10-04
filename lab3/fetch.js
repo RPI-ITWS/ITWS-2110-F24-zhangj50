@@ -147,7 +147,9 @@ window.addEventListener("load", function () {
           "--wind-lower",
           `${135 + data.currentConditions.winddir - 1}deg`
         );
+
         const forecast = document.querySelector(".forecast");
+        forecast.innerHTML = "";
         let currDay = "";
         let dayInfo = {};
         let maxTemp = 0;
