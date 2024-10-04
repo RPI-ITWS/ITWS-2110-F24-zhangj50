@@ -117,7 +117,8 @@ window.addEventListener("load", function () {
         document.querySelector("#edit").addEventListener("click", function (e) {
           const divSelector = document.querySelector(".main-degree");
           tempCode = divSelector.innerHTML;
-          divSelector.innerHTML = `<input type="number" value=${data.main.temp}/>`;
+          console.log(data.main.temp);
+          divSelector.innerHTML = `<input type="number" value="${data.main.temp}"/>`;
         });
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(
