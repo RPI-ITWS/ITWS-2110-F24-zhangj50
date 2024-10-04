@@ -46,6 +46,7 @@ window.addEventListener("load", function () {
     await fetch("currentdata.php", {
       method: "POST",
     })
+      .then((response) => response.json())
       .then((data) => {
         data = JSON.parse(data);
         const currentTime = new Date();
