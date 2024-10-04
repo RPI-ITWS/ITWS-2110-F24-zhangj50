@@ -19,11 +19,8 @@
       $dbOk = true;
     }
   ?>
-  <form method="post" action="current.php">
-      <button type="submit" id="current-button">Pull Current Weather</button>
-  </form>
-  <form method="post" action="forecast.php">
-    <button id="forecast-button">Pull Forecasted Weather</button>
+    <button onclick="currentAPI()" id="current-button">Pull Current Weather</button>
+    <button onclick="forecastAPI()" id="forecast-button">Pull Forecasted Weather</button>
   </form>
 
     
@@ -133,6 +130,6 @@
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="fetch.js"></script>
   </body>
 </html>
