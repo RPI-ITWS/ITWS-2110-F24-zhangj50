@@ -31,7 +31,7 @@
             <h2 class="city">Troy</h2>
             <div class="main-degree">
               <h3 class="temp">73&deg;</h3>
-              <button><img src="icons/edit.png" alt="edit"></button>
+              <button id="edit"><img src="icons/edit.png" alt="edit"></button>
             </div>
             <div class="image"></div>
           </div>
@@ -100,7 +100,7 @@
                 VISIBILITY
               </h3>
               <div class="box-info">
-                <b id="viz-number">11mi</b>
+                <b id="viz-number"></b>
               </div>
             </div>
             <div class="box">
@@ -127,7 +127,7 @@
                 PRESSURE
               </h3>
               <div id="small" class="box-info">
-                <b>30.02 inHg</b>
+                <b id="pressure-number"></b>
               </div>
             </div>
           </div>
