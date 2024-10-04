@@ -6,12 +6,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-  <form method="post" action="current.php">
-      <button type="submit" id="current-button">Pull Current Weather</button>
-    </form>
-    <form method="post" action="forecast.php">
-      <button id="forecast-button">Pull Forecasted Weather</button>
-    </form>
   <?php 
     $dbOk = false;
     @$db = new mysqli('localhost', 'phpmyadmin', 'Password123', 'weather');
@@ -24,7 +18,14 @@
     } else {
       $dbOk = true;
     }
-    ?>
+  ?>
+  <form method="post" action="current.php">
+      <button type="submit" id="current-button">Pull Current Weather</button>
+  </form>
+  <form method="post" action="forecast.php">
+    <button id="forecast-button">Pull Forecasted Weather</button>
+  </form>
+
     
     <div class="container">
       <div class="weather-wrapper">

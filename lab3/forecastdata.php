@@ -10,12 +10,10 @@
     } else {
       $dbOk = true;
     }
-    $query = 'update weather set data=(?) where api = "forecast"';
+    $query = 'select * from weather where api = "forecast"';
     $statement = $db->prepare($query);
-         // bind our variable to the question mark
-   $statement->bind_param("s", $_POST["body"]);
-   // make it so:
-   $statement->execute();
-   $statement->close();
-   $db->close();
+    $statement->execute();
+    $result = $statement->get_result();
+    $row = $result->fetch_assoc();
+    echo $row["data"]
 ?>
