@@ -272,7 +272,7 @@ window.addEventListener("load", function () {
   document
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
-  document.querySelector("#edit").addEventListener("click");
+  document.querySelector("#edit").addEventListener("click", function (e) {});
   useCurrentData();
   useForecastData();
 });
