@@ -19,8 +19,8 @@
       $dbOk = true;
     }
   ?>
-    <button id="current-button">Pull Current Weather</button>
-    <button id="forecast-button">Pull Forecasted Weather</button>
+    <button class="update-buttons" id="current-button">Pull Current Weather</button>
+    <button class="update-buttons" id="forecast-button">Pull Forecasted Weather</button>
   </form>
 
     
@@ -29,7 +29,10 @@
         <div class="top-wrapper">
           <div class="left">
             <h2 class="city">Troy</h2>
-            <h3 class="temp">73&deg;</h3>
+            <div class="main-degree">
+              <h3 class="temp">73&deg;</h3>
+              <button><img src="icons/edit.png" alt="edit"></button>
+            </div>
             <div class="image"></div>
           </div>
 

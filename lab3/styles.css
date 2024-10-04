@@ -34,6 +34,11 @@ hr {
   padding: 4rem 0;
 }
 
+.main-degree button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
 .details {
   margin: 3rem auto;
   display: flex;
@@ -51,7 +56,8 @@ hr {
   margin-top: 1rem;
 }
 
-.details h3 img {
+.details h3 img,
+.main-degree img {
   -webkit-filter: invert(var(--invert));
   filter: invert(var(--invert));
   width: 1rem;
@@ -276,7 +282,7 @@ because I couldnt find an icon online
   animation: wind 0.3s infinite alternate ease-in-out;
 }
 
-button {
+.update-buttons {
   background-color: blue;
   color: white;
   padding: 1rem;

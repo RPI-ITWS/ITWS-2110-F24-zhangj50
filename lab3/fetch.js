@@ -68,6 +68,9 @@ window.addEventListener("load", function () {
         document.querySelector(
           "#hum-number"
         ).innerHTML = `${data.main.humidity}%`;
+        document.querySelector(
+          "#pressure-number"
+        ).innerHTML = `${data.main.pressure}hPa`;
         const riseset = document.querySelector("#ss");
         const sunTime = document.querySelector("#sun-time");
         let ampm = "AM";
@@ -269,6 +272,7 @@ window.addEventListener("load", function () {
   document
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
+  document.querySelector("#edit").addEventListener("click");
   useCurrentData();
   useForecastData();
 });

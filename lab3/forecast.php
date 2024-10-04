@@ -12,8 +12,6 @@
     }
     $data = file_get_contents('php://input');
 
-
-
     $query = 'update weather set data=(?) where api = "forecast"';
     $statement = $db->prepare($query);
          // bind our variable to the question mark
