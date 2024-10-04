@@ -49,6 +49,7 @@ window.addEventListener("load", function () {
       .then((response) => response.json())
       .then((data) => {
         data = JSON.parse(data);
+        console.log(data);
         const currentTime = new Date();
         const sunriseTime = new Date(data.sys.sunrise * 1000);
         const sunsetTime = new Date(data.sys.sunset * 1000);
