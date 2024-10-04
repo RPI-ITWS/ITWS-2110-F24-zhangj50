@@ -117,7 +117,7 @@ window.addEventListener("load", function () {
           );
       })
       .catch((error) => {
-        console.log("error");
+        console.log(error);
       });
   }
 
@@ -127,7 +127,8 @@ window.addEventListener("load", function () {
     })
       .then((response) => response.json())
       .then((data) => {
-        document.querySelector("#wind-speed-number").innerHTML =
+        data = JSON.parse(data);
+        document.querySelecctor("#wind-speed-number").innerHTML =
           data.currentConditions.windspeed;
         document.querySelector("#wind-gust-number").innerHTML =
           data.currentConditions.windgust;
@@ -261,4 +262,11 @@ window.addEventListener("load", function () {
         });
     });
   }
+
+  document
+    .querySelector("#current-button")
+    .addEventListener("click", currentAPI);
+  document
+    .querySelector("#forecast-button")
+    .addEventListener("click", forecastAPI);
 });
