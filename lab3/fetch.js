@@ -239,30 +239,30 @@ window.addEventListener("load", function () {
 
   async function forecastAPI() {
     let lat, lon;
-    navigator.geolocation.getCurrentPosition((position) => {
+    navigator.geolocation.getCurrentPosition(async (position) => {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
-    });
-    const request = await fetch(
-      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}?key=${SECOND_KEY}`
-    );
-    const response = request.json();
-    response.then((data) => {
-      console.log(data);
-      fetch("forecast.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((d) => {
-          useForecastData();
+      const request = await fetch(
+        `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}?key=${SECOND_KEY}`
+      );
+      const response = request.json();
+      response.then((data) => {
+        console.log(data);
+        fetch("forecast.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         })
-        .catch((error) => {
-          console.log(error);
-        });
+          .then((response) => response.json())
+          .then((d) => {
+            useForecastData();
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
     });
   }
 
@@ -272,4 +272,6 @@ window.addEventListener("load", function () {
   document
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
+  useCurrentData();
+  useForecastData();
 });
