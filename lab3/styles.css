@@ -38,11 +38,14 @@ hr {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  height: 10rem;
 }
 
+#edit img {
+  width: 4rem;
+}
 .main-degree {
   display: flex;
+  justify-content: center;
 }
 .details {
   margin: 3rem auto;
