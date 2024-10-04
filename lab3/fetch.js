@@ -224,7 +224,6 @@ window.addEventListener("load", function () {
           },
           body: JSON.stringify(data),
         })
-          .then((response) => response.json())
           .then((d) => {
             useCurrentData();
           })
