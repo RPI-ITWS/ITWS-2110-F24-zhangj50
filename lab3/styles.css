@@ -40,7 +40,8 @@ hr {
   border: none;
 }
 
-#edit img {
+#edit img,
+#done img {
   width: 4rem;
 }
 .main-degree {

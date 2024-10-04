@@ -118,7 +118,20 @@ window.addEventListener("load", function () {
           const divSelector = document.querySelector(".main-degree");
           tempCode = divSelector.innerHTML;
           console.log(data.main.temp);
-          divSelector.innerHTML = `<input type="number" value="${data.main.temp}"/>`;
+          divSelector.innerHTML = `<input type="number" id="number-change" value="${data.main.temp}"/> <button id="done"><img src="icons/done.png" alt="done"></button>`;
+          document
+            .querySelector("#done")
+            .addEventListener("click", async function (e) {
+              await fetch("updateTemp.php", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  num: document.querySelector("#number-change").value,
+                }),
+              }).then((response) => useCurrentData());
+            });
         });
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(
