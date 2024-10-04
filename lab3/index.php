@@ -19,8 +19,8 @@
       $dbOk = true;
     }
   ?>
-    <button onclick="currentAPI()" id="current-button">Pull Current Weather</button>
-    <button onclick="forecastAPI()" id="forecast-button">Pull Forecasted Weather</button>
+    <button id="current-button">Pull Current Weather</button>
+    <button id="forecast-button">Pull Forecasted Weather</button>
   </form>
 
     
