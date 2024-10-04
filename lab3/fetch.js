@@ -207,31 +207,30 @@ window.addEventListener("load", function () {
 
   async function currentAPI() {
     let lat, lon;
-    navigator.geolocation.getCurrentPosition((position) => {
+    navigator.geolocation.getCurrentPosition(async (position) => {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
-    });
-    console.log(lat, lon);
-    const request = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
-    );
-    const response = request.json();
-    response.then((data) => {
-      console.log(data);
-      fetch("forecast.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((d) => {
-          useCurrentData();
+      const request = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
+      );
+      const response = request.json();
+      response.then((data) => {
+        console.log(data);
+        fetch("forecast.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         })
-        .catch((error) => {
-          console.log(error);
-        });
+          .then((response) => response.json())
+          .then((d) => {
+            useCurrentData();
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
     });
   }
 
