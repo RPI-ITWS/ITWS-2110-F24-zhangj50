@@ -7,6 +7,8 @@
   </head>
   <body>
   <?php 
+    $dbOk = false;
+    @$db = new mysqli('localhost', 'root', 'Password123', 'project');
 
     ?>
     <form method="post" action="current.php">
