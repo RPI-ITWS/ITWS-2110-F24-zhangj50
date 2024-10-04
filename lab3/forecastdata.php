@@ -15,5 +15,5 @@
     $statement->execute();
     $result = $statement->get_result();
     $row = $result->fetch_assoc();
-    echo $row["data"]
+    echo json_encode($row["data"])
 ?>
