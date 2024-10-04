@@ -203,7 +203,7 @@ window.addEventListener("load", function () {
         }
       })
       .catch((error) => {
-        console.log("error");
+        console.log(error);
       });
   }
 
