@@ -130,7 +130,7 @@ window.addEventListener("load", function () {
       .then((response) => response.json())
       .then((data) => {
         data = JSON.parse(data);
-        document.querySelecctor("#wind-speed-number").innerHTML =
+        document.querySelector("#wind-speed-number").innerHTML =
           data.currentConditions.windspeed;
         document.querySelector("#wind-gust-number").innerHTML =
           data.currentConditions.windgust;
