@@ -1,0 +1,169 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #87cefa; /* Soft blue background */
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.upper-section {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Center items vertically */
+  margin: 20px;
+  width: 100%; /* Make it full width */
+  background-color: #e0f7fa; /* Light background for upper section */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.current-weather {
+  text-align: center;
+  flex: 1; /* Allow this section to grow */
+}
+
+#city {
+  font-size: 28px; /* Larger font for city name */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+#temperature {
+  font-size: 48px; /* Larger font for temperature */
+  font-weight: bold;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.forecast-day {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.forecast-day:hover {
+  transform: scale(1.03); /* Slight scale on hover */
+}
+
+.weather-bar-container {
+  position: relative;
+  flex-grow: 1;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.weather-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #ff6f00;
+  border-radius: 10px;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+  .upper-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.wind-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detail-item {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.detail-item:hover {
+  background-color: #d1e7dd; /* Change background on hover */
+}
+
+#compass {
+  width: 50px;
+  height: 50px;
+  background: url("compass.png") no-repeat center center;
+  background-size: contain;
+  margin: 10px 0;
+}
+
+.wind-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wind-box {
+  background-color: #ffffff; /* White background */
+  border: 2px solid #d1e7dd; /* Light green border */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column; /* Stack the wind components vertically */
+  align-items: center; /* Center align the text */
+  gap: 10px; /* Space between wind components */
+  width: 200px; /* Control width of the wind box */
+  margin: 0 auto; /* Center the wind box */
+}
+
+#compass {
+  margin-top: 10px; /* Add space between compass and wind box */
+}
