@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="upper-section">
+        <!-- Current Weather Section -->
+        <div class="current-weather">
+          <div id="city">City Name</div>
+          <div id="temperature">75°F</div>
+          <div id="icon">
+            <img src="icon_url" alt="Weather Icon" />
+          </div>
+        </div>
+        <!-- Forecast Section -->
+        <div class="forecast" id="forecast">
+          <!-- Forecast days will be dynamically inserted here by script.js -->
+        </div>
+      </div>
+      <!-- Lower Section -->
+      <div class="lower-section">
+        <!-- Wind Details -->
+        <div class="wind-section">
+          <div class="wind-box">
+            <div id="wind-gust">Wind Gust: -- mph</div>
+            <div id="wind-speed">Wind Speed: -- mph</div>
+            <div id="wind-direction">Wind Direction: --°</div>
+          </div>
+          <div id="compass"></div>
+        </div>
+
+        <!-- Additional Weather Details -->
+        <div class="details-grid">
+          <div class="detail-item" id="feels-like">Feels Like: --°F</div>
+          <div class="detail-item" id="precipitation">Precipitation: -- in</div>
+          <div class="detail-item" id="visibility">Visibility: -- mi</div>
+          <div class="detail-item" id="humidity">Humidity: --%</div>
+          <div class="detail-item" id="sunrise-sunset">Sunrise/Sunset: --</div>
+          <div class="detail-item" id="pressure">Pressure: -- hPa</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
