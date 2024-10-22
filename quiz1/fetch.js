@@ -343,4 +343,5 @@ window.addEventListener("load", function () {
 
   useCurrentData();
   useForecastData();
+  useFrankData();
 });
