@@ -240,30 +240,72 @@ window.addEventListener("load", function () {
         data = JSON.parse(data);
         const rates = data.rates;
         const table = document.querySelector(".currency-table");
-        for (key in data.rates) {
-          table.insertAdjacentHTML(
-            "beforeend",
-            `<tr id=${key}>
+        let keys = [];
+        function showAll() {
+          for (key in data.rates) {
+            keys.push(key);
+            table.insertAdjacentHTML(
+              "beforeend",
+              `<tr id=${key}>
             <td>${key}</td>
             <td>&#8364;${rates[key].toFixed(2)}</td>
           </tr>`
-          );
-          gsap.fromTo(
-            `#${key}`,
-            {
-              y: 200,
-              opacity: 0,
-            },
-            {
-              scrollTrigger: { trigger: `#${key}` },
-              y: 0,
-              opacity: 1,
-              ease: "back",
-              delay: 0.5,
-              duration: 0.5,
-            }
-          );
+            );
+            gsap.fromTo(
+              `#${key}`,
+              {
+                y: 200,
+                opacity: 0,
+              },
+              {
+                scrollTrigger: { trigger: `#${key}` },
+                y: 0,
+                opacity: 1,
+                ease: "back",
+                delay: 0.5,
+                duration: 0.5,
+              }
+            );
+          }
         }
+        showAll();
+        //search
+        document
+          .querySelector("#search")
+          .addEventListener("keyup", function (e) {
+            let value = document.querySelector("#search").value.toLowerCase();
+            if (value === "") {
+              showAll();
+            } else {
+              keys.forEach((key) => {
+                const lower = key.toLowerCase();
+                if (lower.includes(value)) {
+                  table.insertAdjacentHTML(
+                    "beforeend",
+                    `<tr id=${key}>
+                  <td>${key}</td>
+                  <td>&#8364;${rates[key].toFixed(2)}</td>
+                </tr>`
+                  );
+                }
+                gsap.fromTo(
+                  `#${key}`,
+                  {
+                    y: 200,
+                    opacity: 0,
+                  },
+                  {
+                    scrollTrigger: { trigger: `#${key}` },
+                    y: 0,
+                    opacity: 1,
+                    ease: "back",
+                    delay: 0.5,
+                    duration: 0.5,
+                  }
+                );
+              });
+            }
+          });
       })
       .catch((error) => {
         console.log(error);
