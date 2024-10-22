@@ -273,8 +273,6 @@ window.addEventListener("load", function () {
   }
 
   async function frankAPI() {
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
     const request = await fetch(`https://api.frankfurter.app/latest`);
     const response = request.json();
     response.then(async (data) => {
