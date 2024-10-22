@@ -238,7 +238,17 @@ window.addEventListener("load", function () {
       .then((response) => response.json())
       .then((data) => {
         data = JSON.parse(data);
-        //code goes here
+        const rates = data.rates;
+        const table = document.querySelector(".currency-table");
+        for (key in data.rates) {
+          table.insertAdjacentHTML(
+            "beforeend",
+            `<tr>
+            <td>${key}</td>
+            <td>${rates[key]}</td>
+          </tr>`
+          );
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -277,7 +287,6 @@ window.addEventListener("load", function () {
     const response = request.json();
     response.then(async (data) => {
       console.log(data);
-      console.log("ok");
       await fetch("frank.php", {
         method: "POST",
         headers: {

@@ -303,6 +303,23 @@ because I couldnt find an icon online
   font-weight: bold;
 }
 
+.money-wrapper h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.currency-table {
+  margin: auto;
+}
+
+th,
+td {
+  border: solid black 2px;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2em;
+}
 @media (max-width: 1375px) {
   .details > * {
     height: 18rem;
