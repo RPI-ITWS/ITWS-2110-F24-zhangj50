@@ -332,6 +332,7 @@ th {
   font-size: 3em;
 }
 .money-container {
+  margin: auto;
   width: 80%;
 }
 @media (max-width: 1375px) {
