@@ -333,6 +333,7 @@ window.addEventListener("load", function () {
   document
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
+  document.querySelector("#frank-button").addEventListener("click", frankAPI);
   let tempCode;
 
   useCurrentData();
