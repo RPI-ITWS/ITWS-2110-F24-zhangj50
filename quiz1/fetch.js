@@ -245,7 +245,7 @@ window.addEventListener("load", function () {
             "beforeend",
             `<tr>
             <td>${key}</td>
-            <td>&#8364;${rates[key]}</td>
+            <td>&#8364;${rates[key].toFixed(2)}</td>
           </tr>`
           );
         }
