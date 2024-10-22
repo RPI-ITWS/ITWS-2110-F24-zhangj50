@@ -273,28 +273,26 @@ window.addEventListener("load", function () {
   }
 
   async function frankAPI() {
-    let lat, lon;
-    navigator.geolocation.getCurrentPosition(async (position) => {
-      lat = position.coords.latitude;
-      lon = position.coords.longitude;
-      const request = await fetch(`https://api.frankfurter.app/latest`);
-      const response = request.json();
-      response.then(async (data) => {
-        console.log(data);
-        await fetch("frank.php", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    const request = await fetch(`https://api.frankfurter.app/latest`);
+    const response = request.json();
+    response.then(async (data) => {
+      console.log(data);
+      console.log("ok");
+      await fetch("frank.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((d) => {
+          useFrankData();
         })
-          .then((d) => {
-            useFrankData();
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      });
+        .catch((error) => {
+          console.log(error);
+        });
     });
   }
 
