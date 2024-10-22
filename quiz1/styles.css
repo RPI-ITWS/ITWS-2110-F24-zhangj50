@@ -311,9 +311,12 @@ because I couldnt find an icon online
 .currency-table {
   margin: auto;
 }
-
+table {
+  border-spacing: 0px;
+}
 th,
 td {
+  margin: 0;
   border: solid black 2px;
   width: 50%;
   text-align: center;
