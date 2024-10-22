@@ -243,7 +243,10 @@ window.addEventListener("load", function () {
         let keys = [];
         function showAll() {
           for (key in data.rates) {
-            keys.push(key);
+            if (!keys.includes(key)) {
+              keys.push(key);
+            }
+
             table.insertAdjacentHTML(
               "beforeend",
               `<tr id=${key}>
