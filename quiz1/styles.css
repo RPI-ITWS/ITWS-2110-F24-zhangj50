@@ -335,6 +335,14 @@ th {
   margin: auto;
   width: 80%;
 }
+#search {
+  padding: 1rem;
+  font-size: 2em;
+}
+label {
+  font-weight: 600;
+  font-size: 2em;
+}
 @media (max-width: 1375px) {
   .details > * {
     height: 18rem;
