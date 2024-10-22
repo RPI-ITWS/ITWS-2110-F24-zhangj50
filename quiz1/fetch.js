@@ -243,10 +243,24 @@ window.addEventListener("load", function () {
         for (key in data.rates) {
           table.insertAdjacentHTML(
             "beforeend",
-            `<tr>
+            `<tr id=${key}>
             <td>${key}</td>
             <td>&#8364;${rates[key].toFixed(2)}</td>
           </tr>`
+          );
+          gsap.fromTo(
+            `#${key}`,
+            {
+              y: 200,
+              opacity: 0,
+            },
+            {
+              scrollTrigger: { trigger: `#${key}` },
+              y: 0,
+              opacity: 1,
+              ease: "back",
+              duration: 0.3,
+            }
           );
         }
       })

@@ -1,8 +1,6 @@
-Resources:
+Here, I used a frankAPI function to pull the data from the latest endpoint and sent it to a php file that stored that data in the weather database the was made in lab3. The useFrankData function pulls the data from the SQL database using fetch that asks the created frankdata.php to return the data from the database. Then using this data, I dynamically created a table in the HTML using insertAdjacentHTML. I copied over all the files from lab3 to use a starting point and integrated the frankfurt API to include all the foriegn currency exchange rates using a Euro base.
 
-https://www.shareicon.net/tick-check-shapes-done-button-mark-692666
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
-https://stackoverflow.com/questions/61406626/how-do-i-print-a-success-message-after-a-successful-fetch
-https://stackoverflow.com/questions/61082514/mariadb-insert-error-code-4025-constraint-fail-problem
-https://stackoverflow.com/questions/17488207/how-to-convert-a-string-to-json-object-in-php
-https://www.veryicon.com/icons/miscellaneous/linear-small-icon/edit-246.html
+Resources:
+https://www.w3schools.com/html/html_tables.asp
+https://www.w3schools.com/html/html_symbols.asp
+https://coreui.io/blog/how-to-round-a-number-to-two-decimal-places-in-javascript/
