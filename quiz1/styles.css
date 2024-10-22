@@ -308,6 +308,11 @@ because I couldnt find an icon online
   text-align: center;
 }
 
+.money-wrapper {
+  background-color: black;
+  color: whitesmoke;
+  padding: 1rem;
+}
 .currency-table {
   margin: auto;
 }
@@ -317,11 +322,14 @@ table {
 th,
 td {
   margin: 0;
-  border: solid black 2px;
+  border: solid whitesmoke 2px;
   width: 50%;
   text-align: center;
   padding: 1rem;
   font-size: 2em;
+}
+th {
+  font-size: 3em;
 }
 @media (max-width: 1375px) {
   .details > * {
