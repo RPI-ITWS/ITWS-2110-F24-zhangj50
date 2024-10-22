@@ -1,6 +1,6 @@
 <?php 
     $dbOk = false;
-    @$db = new mysqli('localhost', 'phpmyadmin', '', 'weather');
+    @$db = new mysqli('localhost', 'phpmyadmin', 'Password123', 'weather');
     if ($db->connect_error) { 
       echo '
       <div class="messages">
