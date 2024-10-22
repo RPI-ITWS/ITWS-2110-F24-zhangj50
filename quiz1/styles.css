@@ -331,6 +331,9 @@ td {
 th {
   font-size: 3em;
 }
+.money-main {
+  width: 80%;
+}
 @media (max-width: 1375px) {
   .details > * {
     height: 18rem;
