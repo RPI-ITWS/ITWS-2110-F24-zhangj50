@@ -259,7 +259,8 @@ window.addEventListener("load", function () {
               y: 0,
               opacity: 1,
               ease: "back",
-              duration: 0.3,
+              delay: 1,
+              duration: 1,
             }
           );
         }
