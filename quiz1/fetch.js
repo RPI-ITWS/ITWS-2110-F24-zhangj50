@@ -273,6 +273,10 @@ window.addEventListener("load", function () {
         document
           .querySelector("#search")
           .addEventListener("keyup", function (e) {
+            table.innerHTML = `<tr>
+            <th>Country</th>
+            <th>Conversion Rate &#40;Base: EUR&#41;</th>
+          </tr>`;
             let value = document.querySelector("#search").value.toLowerCase();
             if (value === "") {
               showAll();
@@ -295,11 +299,9 @@ window.addEventListener("load", function () {
                     opacity: 0,
                   },
                   {
-                    scrollTrigger: { trigger: `#${key}` },
                     y: 0,
                     opacity: 1,
                     ease: "back",
-                    delay: 0.5,
                     duration: 0.5,
                   }
                 );
