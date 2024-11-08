@@ -1,0 +1,8 @@
+steps:
+  - task: SSH@0
+    inputs:
+      sshEndpoint: "VM"
+      runOptions: "inline"
+      inline: |
+        echo "Connected to Azure VM!"
+        zap/zap.sh -daemon
