@@ -1,8 +1,33 @@
-steps:
-  - task: SSH@0
-    inputs:
-      sshEndpoint: "VM"
-      runOptions: "inline"
-      inline: |
-        echo "Connected to Azure VM!"
-        zap/zap.sh -daemon
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+jobs:
+  - job: ZAP_Scan
+    displayName: "Run OWASP ZAP Security Scan"
+    steps:
+      # Checkout the repository
+      - task: Checkout@1
+
+      # Run the OWASP ZAP Scan task
+      - task: OWASPZAP.ZapScan@0
+        inputs:
+          targetUrl: "http://<your-application-url>" # Replace with your target URL
+          zapLocation: "$(Agent.ToolsDirectory)/owaspzap" # Location of ZAP tool
+          scanType: "Full" # You can choose 'Full' or 'Passive' scan
+          apiKey: "" # Leave blank if you don’t need API key authentication
+          waitForResults: true # Whether to wait for scan completion before proceeding
+          attackStrength: "High" # Optional: Select scan strength (Low, Medium, High)
+          reportType: "HTML" # Report format (HTML, XML, JSON)
+          outputFile: "zap_report.html" # The output file to store the report
+
+      # Publish the report as an artifact
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: "zap_report.html"
+          artifactName: "ZAP_Scan_Report"
+          publishLocation: "Container"
