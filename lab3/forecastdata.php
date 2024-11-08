@@ -1,6 +1,17 @@
 <?php 
+
+    $env = file_get_contents(__DIR__."../.env");
+    $lines = explode("\n",$env);
+
+    foreach($lines as $line){
+      preg_match("/([^#]+)\=(.*)/",$line,$matches);
+      if(isset($matches[2])){
+        putenv(trim($line));
+      }
+    }
+    $password = getenv('PASSWORD');
     $dbOk = false;
-    @$db = new mysqli('localhost', 'phpmyadmin', 'Password123', 'weather');
+    @$db = new mysqli('localhost', 'phpmyadmin', $password, 'weather');
     if ($db->connect_error) { 
       echo '
       <div class="messages">
