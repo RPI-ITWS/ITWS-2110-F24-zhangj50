@@ -26,7 +26,8 @@ foreach ($lines as $line) {
 }
 
 // Fetch password from environment variables
-$password = getenv('PASSWORD');
+    $password = getenv('PASSWORD');
+    echo json_encode($password);
     $dbOk = false;
     @$db = new mysqli('localhost', 'phpmyadmin', $password, 'weather');
     if ($db->connect_error) { 
@@ -43,5 +44,4 @@ $password = getenv('PASSWORD');
     $statement->execute();
     $result = $statement->get_result();
     $row = $result->fetch_assoc();
-    echo json_encode($row["data"])
 ?>
