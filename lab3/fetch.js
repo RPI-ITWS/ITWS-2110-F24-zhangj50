@@ -43,14 +43,17 @@ window.addEventListener("load", function () {
   }
 
   async function useCurrentData() {
-    console.log("asd");
     await fetch("currentdata.php", {
       method: "POST",
     })
-      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        response.json();
+      })
       .then((data) => {
         data = JSON.parse(data);
         console.log(data);
+        console.log("mew");
         const currentTime = new Date();
         const sunriseTime = new Date(data.sys.sunrise * 1000);
         const sunsetTime = new Date(data.sys.sunset * 1000);
