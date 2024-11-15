@@ -27,7 +27,6 @@ foreach ($lines as $line) {
 
 // Fetch password from environment variables
     $password = getenv('PASSWORD');
-    echo 
     $dbOk = false;
     @$db = new mysqli('localhost', 'phpmyadmin', $password, 'weather');
     if ($db->connect_error) { 
