@@ -46,10 +46,7 @@ window.addEventListener("load", function () {
     await fetch("currentdata.php", {
       method: "POST",
     })
-      .then((response) => {
-        console.log(response);
-        response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
         data = JSON.parse(data);
