@@ -51,6 +51,7 @@ window.addEventListener("load", function () {
         response.json();
       })
       .then((data) => {
+        console.log(data);
         data = JSON.parse(data);
         console.log(data);
         console.log("mew");
