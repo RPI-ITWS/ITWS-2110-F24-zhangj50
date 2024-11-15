@@ -43,5 +43,5 @@ foreach ($lines as $line) {
     $statement->execute();
     $result = $statement->get_result();
     $row = $result->fetch_assoc();
-    echo json_encode(["yes"])
+    echo json_encode($row["data"])
 ?>
