@@ -12,7 +12,6 @@ window.addEventListener("load", function () {
     "Friday",
     "Saturday",
   ];
-
   function setLight() {
     root.style.setProperty("--primary", "rgb(132, 185, 206)");
     root.style.setProperty("--secondary", "rgb(68, 108, 124)");
