@@ -298,10 +298,14 @@ window.addEventListener("load", function () {
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
   let tempCode;
-  useCurrentData();
-  useForecastData();
+
   setTimeout(() => {
     document.querySelector(".container").style.display = "block";
-    document.querySelector(".spinner-wrapper").style.display = "none";
+    document.querySelector(".loader-wrapper").style.display = "none";
+    document.querySelectorAll(".update-buttons")[0].style.display = "inline";
+    document.querySelectorAll(".update-buttons")[1].style.display = "inline";
+
+    useCurrentData();
+    useForecastData();
   }, 1000);
 });
