@@ -16,3 +16,8 @@
    Changes I made:
 
    1. For accessibility, I added alt tags to all the images
+
+Resources:
+https://css-loaders.com/spinner/
+https://charlesamith.com/blog/ux-design/ux-honeycomb
+https://lawsofux.com/

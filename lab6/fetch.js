@@ -297,10 +297,11 @@ window.addEventListener("load", function () {
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
   let tempCode;
-  useCurrentData();
-  useForecastData();
+
   setTimeout(() => {
     document.querySelector(".container").style.display = "block";
     document.querySelector(".loader-wrapper").style.display = "none";
+    useCurrentData();
+    useForecastData();
   }, 1000);
 });
