@@ -196,7 +196,7 @@ window.addEventListener("load", function () {
            <p class="dayofweek">${currDay}</p>
            <img
              src="weather/${dayInfo.icon}.png"
-             alt=""
+             alt="${dayInfo.icon}"
            />
            <p class="low">${Math.round(dayInfo.feelslikemin)}&deg;</p>
            <div class="temp-bar-wrapper" ><div class="temp-bar" id="${i}"></div></div>

@@ -7,10 +7,12 @@
 4. Credible
    There are many ways that this site is not credible, from the abstract link, which may make the website feel gimmicky, or how there is no citing of the APIs on the web page to show that the information coming from a credible source. However, some ways that the site does seem credible is the good layout of the elements and if the user does decide to use this website over time, they will realize the accuracy of the weather data.
 5. Accessible
-   As of now, the images do not have alt tags on them, and there are no other accessible features that are available. This weather app website is not accessible. However, there are no elements that lead to epillepsy
+   As of now, not all images have alt tags on them, and there are no other accessible features that are available. This weather app website is not accessible. However, there are no elements that lead to epilepsy such as flashing elements.
 6. Desirable
    All though the weather app does seem desirable without context, where it does a good job displaying the weather in an easy to read format, there is no motivation for the customer to use this weather app over other weather apps that contain more data in more areas. In addition, this weather app is not supported on mobile devices, which is where most people check their weather, not their computers. Without this weather app in people's lives, there is little to no effect on them as there are many other services that outperform this weather app.
 7. Valuable
    Similar to desirable, however, there are other weather apps on the web designed for computers that provide better details and animations, such as preciptation maps and more specfic weather information. In addition, other weather apps provide news information along with weather information.
 
    Changes I made:
+
+   1. For accessibility, I added alt tags to all the images
