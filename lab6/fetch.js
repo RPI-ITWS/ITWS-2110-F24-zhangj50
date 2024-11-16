@@ -301,6 +301,9 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     document.querySelector(".container").style.display = "block";
     document.querySelector(".loader-wrapper").style.display = "none";
+    document.querySelectorAll(".update-buttons")[0].style.display = "inline";
+    document.querySelectorAll(".update-buttons")[1].style.display = "inline";
+
     useCurrentData();
     useForecastData();
   }, 1000);

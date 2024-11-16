@@ -314,6 +314,7 @@ because I couldnt find an icon online
   border-radius: 12px;
   cursor: pointer;
   font-weight: bold;
+  display: none;
 }
 
 @media (max-width: 1375px) {
