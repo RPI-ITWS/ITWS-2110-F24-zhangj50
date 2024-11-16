@@ -21,10 +21,13 @@
 
    3. Chunking: The weather app is currently chunked well to seperate different sections and information. For example, the forecast gets it's own background and box, and all the wind items are all grouped together because they are all related, also seperated by a box. All the different weather information is seperated into different boxes in the bottom so that the user can focus on them one at a time. This law relates to usability, as chunking related items together helps with processing information with ease, which makes the weather app more usable
 
-   4.Selective Attention: To make my website's element's more findable, I used the law of selective attention. Previously, the buttons were placed on the top of the screen, which often is ignored because it is placed in an ad like location. To make these buttons more noticed, I put them in the div where all the other elements are. This law relates to the findable lens.
+   4. Selective Attention: To make my website's element's more findable, I used the law of selective attention. Previously, the buttons were placed on the top of the screen, which often is ignored because it is placed in an ad like location. To make these buttons more noticed, I put them in the div where all the other elements are. This law relates to the findable lens.
+
+   5. Findability: In order to find the labs from the root directory, I added an index.html in the root so that the user is able to go to what lab or app that they wanted to see. It's very simple with links to each lab directory.
 
 # Resources:
 
 https://css-loaders.com/spinner/
 https://charlesamith.com/blog/ux-design/ux-honeycomb
 https://lawsofux.com/
+https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout
