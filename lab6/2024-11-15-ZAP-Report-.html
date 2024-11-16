@@ -1,0 +1,2727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2024-11-15-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-11-15-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-11-15-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-11-15-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 15 Nov 2024, at 23:47:39</span>
+		</p>
+		<p>ZAP Version: 2.15.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://zhangj50.eastus.cloudapp.azure.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(28.6%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(28.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://zhangj50.eastus.cloudapp.azure.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>13</span><br> <span
+								class="additional-info-percentages">(185.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>14</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>14</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>7</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/manual</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (299 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/manual HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://zhangj50.eastus.cloudapp.azure.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (161 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Content-Length: 297
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (297 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Ubuntu) Server at zhangj50.eastus.cloudapp.azure.com Port 443&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/ HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (255 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 06 Sep 2024 18:18:04 GMT
+ETag: &quot;29af-621776d9c19aa&quot;
+Accept-Ranges: bytes
+Content-Length: 10671
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10671 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2022-03-22
+    See: https://launchpad.net/bugs/1966004
+  --&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Ubuntu, Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 180px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.banner {
+    padding: 9px 6px 9px 6px;
+    background-color: #E9510E;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    width: 20%;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;icons/ubuntu-logo.png&quot; alt=&quot;Ubuntu Logo&quot;
+             style=&quot;width:184px;height:146px;&quot; class=&quot;floating_element&quot; /&gt;
+        &lt;div&gt;
+          &lt;span style=&quot;margin-top: 1.5em;&quot; class=&quot;floating_element&quot;&gt;
+            Apache2 Default Page
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;banner&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Ubuntu&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2 and is managed using systemd, so to
+                           start/stop the service use &lt;tt&gt;systemctl start apache2&lt;/tt&gt; and
+                           &lt;tt&gt;systemctl stop apache2&lt;/tt&gt;, and use &lt;tt&gt;systemctl status apache2&lt;/tt&gt;
+                           and &lt;tt&gt;journalctl -u apache2&lt;/tt&gt; to check status.  &lt;tt&gt;system&lt;/tt&gt;
+                           and &lt;tt&gt;apache2ctl&lt;/tt&gt; can also be used for service management if
+                           desired.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Ubuntu does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file outside of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;http://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Ubuntu document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;ubuntu-bug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Ubuntu. However, check &lt;a
+                href=&quot;https://bugs.launchpad.net/ubuntu/+source/apache2&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to their respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (314 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://zhangj50.eastus.cloudapp.azure.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (230 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Wed, 17 Jul 2024 18:55:23 GMT
+ETag: &quot;cfa-61d760127dcc0&quot;
+Accept-Ranges: bytes
+Content-Length: 3322
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3322 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ¸      ö   ÁIDATxÚìÒQ	  DÁK`7¦7ÊåØy°	vêÌqC¶*.5ð²ímÀàpÀ8àp¸ àpÀ8àp¸ \pÀ8àp¸ \.À8àp¸ \.Ààp¸ \.Ààp¸ \öÎXr¬ãmÛßîÖ¶&lt;mÛ¶mÛ¶mÛ6¢¶;Éßéíi$oº3:¿ªáKRúåÖ¹÷ VýbñÿBiµMÈUÞ(ü/&lt;LÖÍùäïÃ9¢¼&amp;Ã¿~)ü[ÖÀ¿q¤/Æ®Ê&lt;UðË¡ûÜ¡k?Gïf±à÷	,xî¯àèÑ]¡©`&#39;¸wkLZ¥Y)º.)ºïÒY³à÷&lt;ï·pëÈåsH	«´(º§Ø¿½zi1¸ÆôfÁ{!øÏ ¶«ÈÓ0]wk5öÌ³hNâß²Spÿ9¼§Áaÿå {SmÃÚ©=3,¸TpâØ¹iÑ5DÅ+?ÀupôjzFþ »UXÁ=q ÎØ xþ:¼©Ðäëð.¹Þ¿øVgüºK±&amp;øþÙaÁ»7§U¸ÆßXi¿ú9Â&gt;{ÜZÒ¶rvgXpÏÌQHFðà.H_7ý,÷´á0¦ÙÝd2,¸ÒºbÒ¥Ý_Y0ÿ\&lt;´è:ÃºÄV~GÚ,8yÁÝS&quot;td?¢×/Ñæñ¾rß-Ôê*×ù,õY¸¦Á3stìhÑÑ³	PrÝ/²&quot;8Ã18m9$vpÿv¹weTò	øÖ,¢©ÐËcý; µk=ÂÏ@×UxNdnØ½	¢ðÉà$ Â¿ùÿ_}Û¢Ð©_¹òKë~
+1ÿÇ	Lr¿È¥s¸¡E!×îRp/ö/¸Æ÷£däüIOoõÂ¹¾¤D-EÿMºx|+ç^pWÛVAôê$Âà]85¶¢gõðÓI¥èµt²bYpë}ÝïE:¼¦Ù²«íª$&lt;]ëe]p8ShÑX&amp;«¿òÿÝåH¾hMpWZ`À,þÍ«l	Sv&#39;(ÞZfMp÷ÌP²Æ0Å·bâ	ÙgMp÷.+hâåXN6¹§B&lt;á³&#39;ègLî:V ÉlXÁÝSF È¹¾°àiÁåZQ6Ñ$t.N÷ò
+Î&lt;(§(ëa#à§ÂÁ}+æ&amp;Á÷[Á\*÷&lt;Õ}¤DÓàMÍÀ¶¢¢,/àg2¥/TF?hÎAíì;ÖE¤»OlQp+¦RgÞ$ø×/oå\8¶¥
+À×ÛÉT¶àÏ&amp;¤ZÕ¥s-
+Á©qø³_~R©ÇáÜ®Q=íjÏuùVÎçjB&amp;3÷ï á;Ç#  jJ«¾	i%¦zó/î¨9§8;~`hQ?3,8m(@]7bÞ¯-¶TåM=¹tºÏÝãBèøA¸&#39;¤Ù)tðxLÇí÷lIàaÁ«2ONÑpl½&#39;Sí\NF@c%¤²O®Ïý-ý µµÉu?·©&#39;á®zÃ½µÆc¹A.8é T|þïn6`TÞe³¨4g2?eöX$ât©Ê¦víYÜ3FÝU~ßÙ4n&quot;Kc#&gt;&amp;ü9û¶!	rPü,$?¾+¿JYP³DÎ¿­ZñgYüÃ°à±FäÐá=éfÒæQiód$&amp;&amp;ÃºÂ
+F8HÏ°o&gt;8ÃÓeK&lt;à¾í¦¦RiÊuz!¤ÿ¦{]ãZ&lt;(°àíÌÓÏT¸aPZ¥ûÔ¥azAxg,©4ºÚ¹6cÞ,æýQéjá{&gt;íáoôüî©ÃSÎ&gt;ËRºÆö	è(Qi\gîb«ÂÑ«)»7Cs©q¶êô=®û­Ì) t¼sH&#39;þNæ}
+&#39;3÷Ç)´&lt;¦Â·fÜSÜ¤ù)ÕhªtG¼&gt;wjÇü!Xæ!(Íÿ]ëÀ=c\BiZ¢ðí¯Ù»/¨
+ã Ã-*§Ü!·fQ;iS¥yîÚ³Ü9*j¾íºx×·ç÷\»ßúùßQÞÁYõ\à\à\à\à\à\à!ðûì![ 5d#}     À`6Íf{_¿µËÙSöúµÚ`={mbàÙÕÍg½püç×ÙD?£ö³^¸m¹ÎT¥g.;ÌN³»l´N¿ßBàïÀÀÀÀÀ.ðÞø[{÷ #=»q&lt;Ë¯mÛ¶mÛ¶mÛ¶mÛ¶mÛÆâ9ÿ$st/;íùfÚ+ùM{®ÑÓÅoð§/¸Uð8h¸ÏøoxSª:¿ÐmJCO&quot;yù¡%^È¦8[x÷ø×¸ÍÂð0°àÍÑPH,¥Å~^ÐbÓ&lt;5VÂ*^ 3&lt;¡5qÄ¬cÐ4bÞRðè]øe§ë¨¨§à:d@`9.ö=¹*æ9UÁïÃÊN×Ú	Ê þXßÿ¡ÿÛ¼Üu,ÂhÁhÌÁ(HoßE
+þ§°Ó1£mfb/&gt;@AZw¡ô©B_p«à¯0	áÀâ¤X
+%|DR&#39;.ø)$BÊ¨PBUðÿá~v|i,._Ép:iÁ7BkþÆA1çÂ8xÅ*øÿ{ßÅ¼^®^pèx)fµ²
+î:&#39;z:ÉÏ°ëêi/fµ
+î:÷w Ú¬à1á#&gt;ö³
+î:§ê»§ÍPpËb^«à®Sðxbæ73YÁçyÕ­»NÁÝpKÌ-h²÷ó:Ywò¬ÃMVðbÞ«à®Uðábî¼¼7Ö*¸k¼£»Äd/.æM´
+îZo*æ®7YÁ¹à=`tÜp]\N¼»NCÁOXw®FÁèxà¸l,¸\_¨¡àç¬ÿÒG4ºà}Äå0:^âç¸ýØïZ#T¢}oZp«àÅÜØF¼Øp	F&#39;¸øÓß%æ6AP (çÜ*øv17ÑÏ&amp;6øáºîzÄ!ÿï5Ü©ýßÃÛ?*ùFd[Æèÿobc%bþ|\.½&#39;Ë-ññ*¾	¾[Fd¡«x²à¶ìwÂ¨Ä_Ë_iGÁÖcª°àò&gt;H#R]®h_pù( #2MÌý0*x6ùe9íXuYmÂÏ1èI.J|Çù0Fü/¼Ëa|ÈÀÎ: àaqCÌÛÐ$µ|&quot;±É
+ÞY3FÄÅìfÜ¾PÂxèX9y%æý@&lt;öY&gt;È¤a_Þqkáf¢çÇ&lt;7È 1ûb]p/&quot;.´¤ÞB	}ðO¨2á:ÐZRJXoÜÏuÂRì¹Òº.F^ÍGC¸#°ü*Ø
+%Ù¶{é,øäG8oÀBøA	ó 5îAÜ¶hÄ!#1Êa\¦70X¢£%Îâ8K+(á3F!gÝüè(ûÔ+Þ;¨ ¼Å!¬ÄR¬Çü
+Â&gt;übWÁ%&lt;Á	lÇZM8#=¥qp=kPAx+8ksÏà%9aÁÃâ!G8½8âË£/&quot;jY~àÎÚ\Â|#XØ¥ÓOôÒUp¢ô&amp;&lt;¶CéçI&#39;Pv¨àâø	e`/¬
+@iôóz]± ìpð7ªãF&gt;8Éh8v|£
+nKlÌ$øã hø¾KðJ£{XÎÈP%9:a®àü ðÏp³P`t&lt;M1«°gpÍæ
+c:&quot;=~u 	&amp;`5¶ÙlÆJÌÄ@4BN;^½þû×[Ì{1ÛqÇ°3Ðqt¾[VÂ,Ál³Yù¶(èrÀ¿ M9úÿï}    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Ubuntu)</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/319.html">CWE-319</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (314 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://zhangj50.eastus.cloudapp.azure.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (230 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Wed, 17 Jul 2024 18:55:23 GMT
+ETag: &quot;cfa-61d760127dcc0&quot;
+Accept-Ranges: bytes
+Content-Length: 3322
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3322 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ¸      ö   ÁIDATxÚìÒQ	  DÁK`7¦7ÊåØy°	vêÌqC¶*.5ð²ímÀàpÀ8àp¸ àpÀ8àp¸ \pÀ8àp¸ \.À8àp¸ \.Ààp¸ \.Ààp¸ \öÎXr¬ãmÛßîÖ¶&lt;mÛ¶mÛ¶mÛ6¢¶;Éßéíi$oº3:¿ªáKRúåÖ¹÷ VýbñÿBiµMÈUÞ(ü/&lt;LÖÍùäïÃ9¢¼&amp;Ã¿~)ü[ÖÀ¿q¤/Æ®Ê&lt;UðË¡ûÜ¡k?Gïf±à÷	,xî¯àèÑ]¡©`&#39;¸wkLZ¥Y)º.)ºïÒY³à÷&lt;ï·pëÈåsH	«´(º§Ø¿½zi1¸ÆôfÁ{!øÏ ¶«ÈÓ0]wk5öÌ³hNâß²Spÿ9¼§Áaÿå {SmÃÚ©=3,¸TpâØ¹iÑ5DÅ+?ÀupôjzFþ »UXÁ=q ÎØ xþ:¼©Ðäëð.¹Þ¿øVgüºK±&amp;øþÙaÁ»7§U¸ÆßXi¿ú9Â&gt;{ÜZÒ¶rvgXpÏÌQHFðà.H_7ý,÷´á0¦ÙÝd2,¸ÒºbÒ¥Ý_Y0ÿ\&lt;´è:ÃºÄV~GÚ,8yÁÝS&quot;td?¢×/Ñæñ¾rß-Ôê*×ù,õY¸¦Á3stìhÑÑ³	PrÝ/²&quot;8Ã18m9$vpÿv¹weTò	øÖ,¢©ÐËcý; µk=ÂÏ@×UxNdnØ½	¢ðÉà$ Â¿ùÿ_}Û¢Ð©_¹òKë~
+1ÿÇ	Lr¿È¥s¸¡E!×îRp/ö/¸Æ÷£däüIOoõÂ¹¾¤D-EÿMºx|+ç^pWÛVAôê$Âà]85¶¢gõðÓI¥èµt²bYpë}ÝïE:¼¦Ù²«íª$&lt;]ëe]p8ShÑX&amp;«¿òÿÝåH¾hMpWZ`À,þÍ«l	Sv&#39;(ÞZfMp÷ÌP²Æ0Å·bâ	ÙgMp÷.+hâåXN6¹§B&lt;á³&#39;ègLî:V ÉlXÁÝSF È¹¾°àiÁåZQ6Ñ$t.N÷ò
+Î&lt;(§(ëa#à§ÂÁ}+æ&amp;Á÷[Á\*÷&lt;Õ}¤DÓàMÍÀ¶¢¢,/àg2¥/TF?hÎAíì;ÖE¤»OlQp+¦RgÞ$ø×/oå\8¶¥
+À×ÛÉT¶àÏ&amp;¤ZÕ¥s-
+Á©qø³_~R©ÇáÜ®Q=íjÏuùVÎçjB&amp;3÷ï á;Ç#  jJ«¾	i%¦zó/î¨9§8;~`hQ?3,8m(@]7bÞ¯-¶TåM=¹tºÏÝãBèøA¸&#39;¤Ù)tðxLÇí÷lIàaÁ«2ONÑpl½&#39;Sí\NF@c%¤²O®Ïý-ý µµÉu?·©&#39;á®zÃ½µÆc¹A.8é T|þïn6`TÞe³¨4g2?eöX$ât©Ê¦víYÜ3FÝU~ßÙ4n&quot;Kc#&gt;&amp;ü9û¶!	rPü,$?¾+¿JYP³DÎ¿­ZñgYüÃ°à±FäÐá=éfÒæQiód$&amp;&amp;ÃºÂ
+F8HÏ°o&gt;8ÃÓeK&lt;à¾í¦¦RiÊuz!¤ÿ¦{]ãZ&lt;(°àíÌÓÏT¸aPZ¥ûÔ¥azAxg,©4ºÚ¹6cÞ,æýQéjá{&gt;íáoôüî©ÃSÎ&gt;ËRºÆö	è(Qi\gîb«ÂÑ«)»7Cs©q¶êô=®û­Ì) t¼sH&#39;þNæ}
+&#39;3÷Ç)´&lt;¦Â·fÜSÜ¤ù)ÕhªtG¼&gt;wjÇü!Xæ!(Íÿ]ëÀ=c\BiZ¢ðí¯Ù»/¨
+ã Ã-*§Ü!·fQ;iS¥yîÚ³Ü9*j¾íºx×·ç÷\»ßúùßQÞÁYõ\à\à\à\à\à\à!ðûì![ 5d#}     À`6Íf{_¿µËÙSöúµÚ`={mbàÙÕÍg½püç×ÙD?£ö³^¸m¹ÎT¥g.;ÌN³»l´N¿ßBàïÀÀÀÀÀ.ðÞø[{÷ #=»q&lt;Ë¯mÛ¶mÛ¶mÛ¶mÛ¶mÛÆâ9ÿ$st/;íùfÚ+ùM{®ÑÓÅoð§/¸Uð8h¸ÏøoxSª:¿ÐmJCO&quot;yù¡%^È¦8[x÷ø×¸ÍÂð0°àÍÑPH,¥Å~^ÐbÓ&lt;5VÂ*^ 3&lt;¡5qÄ¬cÐ4bÞRðè]øe§ë¨¨§à:d@`9.ö=¹*æ9UÁïÃÊN×Ú	Ê þXßÿ¡ÿÛ¼Üu,ÂhÁhÌÁ(HoßE
+þ§°Ó1£mfb/&gt;@AZw¡ô©B_p«à¯0	áÀâ¤X
+%|DR&#39;.ø)$BÊ¨PBUðÿá~v|i,._Ép:iÁ7BkþÆA1çÂ8xÅ*øÿ{ßÅ¼^®^pèx)fµ²
+î:&#39;z:ÉÏ°ëêi/fµ
+î:÷w Ú¬à1á#&gt;ö³
+î:§ê»§ÍPpËb^«à®Sðxbæ73YÁçyÕ­»NÁÝpKÌ-h²÷ó:Ywò¬ÃMVðbÞ«à®Uðábî¼¼7Ö*¸k¼£»Äd/.æM´
+îZo*æ®7YÁ¹à=`tÜp]\N¼»NCÁOXw®FÁèxà¸l,¸\_¨¡àç¬ÿÒG4ºà}Äå0:^âç¸ýØïZ#T¢}oZp«àÅÜØF¼Øp	F&#39;¸øÓß%æ6AP (çÜ*øv17ÑÏ&amp;6øáºîzÄ!ÿï5Ü©ýßÃÛ?*ùFd[Æèÿobc%bþ|\.½&#39;Ë-ññ*¾	¾[Fd¡«x²à¶ìwÂ¨Ä_Ë_iGÁÖcª°àò&gt;H#R]®h_pù( #2MÌý0*x6ùe9íXuYmÂÏ1èI.J|Çù0Fü/¼Ëa|ÈÀÎ: àaqCÌÛÐ$µ|&quot;±É
+ÞY3FÄÅìfÜ¾PÂxèX9y%æý@&lt;öY&gt;È¤a_Þqkáf¢çÇ&lt;7È 1ûb]p/&quot;.´¤ÞB	}ðO¨2á:ÐZRJXoÜÏuÂRì¹Òº.F^ÍGC¸#°ü*Ø
+%Ù¶{é,øäG8oÀBøA	ó 5îAÜ¶hÄ!#1Êa\¦70X¢£%Îâ8K+(á3F!gÝüè(ûÔ+Þ;¨ ¼Å!¬ÄR¬Çü
+Â&gt;übWÁ%&lt;Á	lÇZM8#=¥qp=kPAx+8ksÏà%9aÁÃâ!G8½8âË£/&quot;jY~àÎÚ\Â|#XØ¥ÓOôÒUp¢ô&amp;&lt;¶CéçI&#39;Pv¨àâø	e`/¬
+@iôóz]± ìpð7ªãF&gt;8Éh8v|£
+nKlÌ$øã hø¾KðJ£{XÎÈP%9:a®àü ðÏp³P`t&lt;M1«°gpÍæ
+c:&quot;=~u 	&amp;`5¶ÙlÆJÌÄ@4BN;^½þû×[Ì{1ÛqÇ°3Ðqt¾[VÂ,Ál³Yù¶(èrÀ¿ M9úÿï}    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (314 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/icons/ubuntu-logo.png HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://zhangj50.eastus.cloudapp.azure.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (230 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Wed, 17 Jul 2024 18:55:23 GMT
+ETag: &quot;cfa-61d760127dcc0&quot;
+Accept-Ranges: bytes
+Content-Length: 3322
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3322 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ¸      ö   ÁIDATxÚìÒQ	  DÁK`7¦7ÊåØy°	vêÌqC¶*.5ð²ímÀàpÀ8àp¸ àpÀ8àp¸ \pÀ8àp¸ \.À8àp¸ \.Ààp¸ \.Ààp¸ \öÎXr¬ãmÛßîÖ¶&lt;mÛ¶mÛ¶mÛ6¢¶;Éßéíi$oº3:¿ªáKRúåÖ¹÷ VýbñÿBiµMÈUÞ(ü/&lt;LÖÍùäïÃ9¢¼&amp;Ã¿~)ü[ÖÀ¿q¤/Æ®Ê&lt;UðË¡ûÜ¡k?Gïf±à÷	,xî¯àèÑ]¡©`&#39;¸wkLZ¥Y)º.)ºïÒY³à÷&lt;ï·pëÈåsH	«´(º§Ø¿½zi1¸ÆôfÁ{!øÏ ¶«ÈÓ0]wk5öÌ³hNâß²Spÿ9¼§Áaÿå {SmÃÚ©=3,¸TpâØ¹iÑ5DÅ+?ÀupôjzFþ »UXÁ=q ÎØ xþ:¼©Ðäëð.¹Þ¿øVgüºK±&amp;øþÙaÁ»7§U¸ÆßXi¿ú9Â&gt;{ÜZÒ¶rvgXpÏÌQHFðà.H_7ý,÷´á0¦ÙÝd2,¸ÒºbÒ¥Ý_Y0ÿ\&lt;´è:ÃºÄV~GÚ,8yÁÝS&quot;td?¢×/Ñæñ¾rß-Ôê*×ù,õY¸¦Á3stìhÑÑ³	PrÝ/²&quot;8Ã18m9$vpÿv¹weTò	øÖ,¢©ÐËcý; µk=ÂÏ@×UxNdnØ½	¢ðÉà$ Â¿ùÿ_}Û¢Ð©_¹òKë~
+1ÿÇ	Lr¿È¥s¸¡E!×îRp/ö/¸Æ÷£däüIOoõÂ¹¾¤D-EÿMºx|+ç^pWÛVAôê$Âà]85¶¢gõðÓI¥èµt²bYpë}ÝïE:¼¦Ù²«íª$&lt;]ëe]p8ShÑX&amp;«¿òÿÝåH¾hMpWZ`À,þÍ«l	Sv&#39;(ÞZfMp÷ÌP²Æ0Å·bâ	ÙgMp÷.+hâåXN6¹§B&lt;á³&#39;ègLî:V ÉlXÁÝSF È¹¾°àiÁåZQ6Ñ$t.N÷ò
+Î&lt;(§(ëa#à§ÂÁ}+æ&amp;Á÷[Á\*÷&lt;Õ}¤DÓàMÍÀ¶¢¢,/àg2¥/TF?hÎAíì;ÖE¤»OlQp+¦RgÞ$ø×/oå\8¶¥
+À×ÛÉT¶àÏ&amp;¤ZÕ¥s-
+Á©qø³_~R©ÇáÜ®Q=íjÏuùVÎçjB&amp;3÷ï á;Ç#  jJ«¾	i%¦zó/î¨9§8;~`hQ?3,8m(@]7bÞ¯-¶TåM=¹tºÏÝãBèøA¸&#39;¤Ù)tðxLÇí÷lIàaÁ«2ONÑpl½&#39;Sí\NF@c%¤²O®Ïý-ý µµÉu?·©&#39;á®zÃ½µÆc¹A.8é T|þïn6`TÞe³¨4g2?eöX$ât©Ê¦víYÜ3FÝU~ßÙ4n&quot;Kc#&gt;&amp;ü9û¶!	rPü,$?¾+¿JYP³DÎ¿­ZñgYüÃ°à±FäÐá=éfÒæQiód$&amp;&amp;ÃºÂ
+F8HÏ°o&gt;8ÃÓeK&lt;à¾í¦¦RiÊuz!¤ÿ¦{]ãZ&lt;(°àíÌÓÏT¸aPZ¥ûÔ¥azAxg,©4ºÚ¹6cÞ,æýQéjá{&gt;íáoôüî©ÃSÎ&gt;ËRºÆö	è(Qi\gîb«ÂÑ«)»7Cs©q¶êô=®û­Ì) t¼sH&#39;þNæ}
+&#39;3÷Ç)´&lt;¦Â·fÜSÜ¤ù)ÕhªtG¼&gt;wjÇü!Xæ!(Íÿ]ëÀ=c\BiZ¢ðí¯Ù»/¨
+ã Ã-*§Ü!·fQ;iS¥yîÚ³Ü9*j¾íºx×·ç÷\»ßúùßQÞÁYõ\à\à\à\à\à\à!ðûì![ 5d#}     À`6Íf{_¿µËÙSöúµÚ`={mbàÙÕÍg½püç×ÙD?£ö³^¸m¹ÎT¥g.;ÌN³»l´N¿ßBàïÀÀÀÀÀ.ðÞø[{÷ #=»q&lt;Ë¯mÛ¶mÛ¶mÛ¶mÛ¶mÛÆâ9ÿ$st/;íùfÚ+ùM{®ÑÓÅoð§/¸Uð8h¸ÏøoxSª:¿ÐmJCO&quot;yù¡%^È¦8[x÷ø×¸ÍÂð0°àÍÑPH,¥Å~^ÐbÓ&lt;5VÂ*^ 3&lt;¡5qÄ¬cÐ4bÞRðè]øe§ë¨¨§à:d@`9.ö=¹*æ9UÁïÃÊN×Ú	Ê þXßÿ¡ÿÛ¼Üu,ÂhÁhÌÁ(HoßE
+þ§°Ó1£mfb/&gt;@AZw¡ô©B_p«à¯0	áÀâ¤X
+%|DR&#39;.ø)$BÊ¨PBUðÿá~v|i,._Ép:iÁ7BkþÆA1çÂ8xÅ*øÿ{ßÅ¼^®^pèx)fµ²
+î:&#39;z:ÉÏ°ëêi/fµ
+î:÷w Ú¬à1á#&gt;ö³
+î:§ê»§ÍPpËb^«à®Sðxbæ73YÁçyÕ­»NÁÝpKÌ-h²÷ó:Ywò¬ÃMVðbÞ«à®Uðábî¼¼7Ö*¸k¼£»Äd/.æM´
+îZo*æ®7YÁ¹à=`tÜp]\N¼»NCÁOXw®FÁèxà¸l,¸\_¨¡àç¬ÿÒG4ºà}Äå0:^âç¸ýØïZ#T¢}oZp«àÅÜØF¼Øp	F&#39;¸øÓß%æ6AP (çÜ*øv17ÑÏ&amp;6øáºîzÄ!ÿï5Ü©ýßÃÛ?*ùFd[Æèÿobc%bþ|\.½&#39;Ë-ññ*¾	¾[Fd¡«x²à¶ìwÂ¨Ä_Ë_iGÁÖcª°àò&gt;H#R]®h_pù( #2MÌý0*x6ùe9íXuYmÂÏ1èI.J|Çù0Fü/¼Ëa|ÈÀÎ: àaqCÌÛÐ$µ|&quot;±É
+ÞY3FÄÅìfÜ¾PÂxèX9y%æý@&lt;öY&gt;È¤a_Þqkáf¢çÇ&lt;7È 1ûb]p/&quot;.´¤ÞB	}ðO¨2á:ÐZRJXoÜÏuÂRì¹Òº.F^ÍGC¸#°ü*Ø
+%Ù¶{é,øäG8oÀBøA	ó 5îAÜ¶hÄ!#1Êa\¦70X¢£%Îâ8K+(á3F!gÝüè(ûÔ+Þ;¨ ¼Å!¬ÄR¬Çü
+Â&gt;übWÁ%&lt;Á	lÇZM8#=¥qp=kPAx+8ksÏà%9aÁÃâ!G8½8âË£/&quot;jY~àÎÚ\Â|#XØ¥ÓOôÒUp¢ô&amp;&lt;¶CéçI&#39;Pv¨àâø	e`/¬
+@iôóz]± ìpð7ªãF&gt;8Éh8v|£
+nKlÌ$øã hø¾KðJ£{XÎÈP%9:a®àü ðÏp³P`t&lt;M1«°gpÍæ
+c:&quot;=~u 	&amp;`5¶ÙlÆJÌÄ@4BN;^½þû×[Ì{1ÛqÇ°3Ðqt¾[VÂ,Ál³Yù¶(èrÀ¿ M9úÿï}    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bBUGS\b and was detected in the element starting with: &quot;&lt;!--</p>
+
+<p>    Modified from the Debian original for Ubuntu</p>
+
+<p>    Last updated: 2022-03-22</p>
+
+<p>    See: https://launchpad.net/bugs/1966004</p>
+
+<p> &quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/ HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (255 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 06 Sep 2024 18:18:04 GMT
+ETag: &quot;29af-621776d9c19aa&quot;
+Accept-Ranges: bytes
+Content-Length: 10671
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10671 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2022-03-22
+    See: https://launchpad.net/bugs/1966004
+  --&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Ubuntu, Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 180px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.banner {
+    padding: 9px 6px 9px 6px;
+    background-color: #E9510E;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    width: 20%;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;icons/ubuntu-logo.png&quot; alt=&quot;Ubuntu Logo&quot;
+             style=&quot;width:184px;height:146px;&quot; class=&quot;floating_element&quot; /&gt;
+        &lt;div&gt;
+          &lt;span style=&quot;margin-top: 1.5em;&quot; class=&quot;floating_element&quot;&gt;
+            Apache2 Default Page
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;banner&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Ubuntu&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2 and is managed using systemd, so to
+                           start/stop the service use &lt;tt&gt;systemctl start apache2&lt;/tt&gt; and
+                           &lt;tt&gt;systemctl stop apache2&lt;/tt&gt;, and use &lt;tt&gt;systemctl status apache2&lt;/tt&gt;
+                           and &lt;tt&gt;journalctl -u apache2&lt;/tt&gt; to check status.  &lt;tt&gt;system&lt;/tt&gt;
+                           and &lt;tt&gt;apache2ctl&lt;/tt&gt; can also be used for service management if
+                           desired.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Ubuntu does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file outside of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;http://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Ubuntu document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;ubuntu-bug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Ubuntu. However, check &lt;a
+                href=&quot;https://bugs.launchpad.net/ubuntu/+source/apache2&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to their respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>bugs</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://zhangj50.eastus.cloudapp.azure.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://zhangj50.eastus.cloudapp.azure.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://zhangj50.eastus.cloudapp.azure.com/ HTTP/1.1
+host: zhangj50.eastus.cloudapp.azure.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (255 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 16 Nov 2024 04:46:16 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Fri, 06 Sep 2024 18:18:04 GMT
+ETag: &quot;29af-621776d9c19aa&quot;
+Accept-Ranges: bytes
+Content-Length: 10671
+Vary: Accept-Encoding
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10671 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2022-03-22
+    See: https://launchpad.net/bugs/1966004
+  --&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Ubuntu, Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 180px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.banner {
+    padding: 9px 6px 9px 6px;
+    background-color: #E9510E;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    width: 20%;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;icons/ubuntu-logo.png&quot; alt=&quot;Ubuntu Logo&quot;
+             style=&quot;width:184px;height:146px;&quot; class=&quot;floating_element&quot; /&gt;
+        &lt;div&gt;
+          &lt;span style=&quot;margin-top: 1.5em;&quot; class=&quot;floating_element&quot;&gt;
+            Apache2 Default Page
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;banner&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Ubuntu&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2 and is managed using systemd, so to
+                           start/stop the service use &lt;tt&gt;systemctl start apache2&lt;/tt&gt; and
+                           &lt;tt&gt;systemctl stop apache2&lt;/tt&gt;, and use &lt;tt&gt;systemctl status apache2&lt;/tt&gt;
+                           and &lt;tt&gt;journalctl -u apache2&lt;/tt&gt; to check status.  &lt;tt&gt;system&lt;/tt&gt;
+                           and &lt;tt&gt;apache2ctl&lt;/tt&gt; can also be used for service management if
+                           desired.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Ubuntu does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file outside of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;http://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Ubuntu document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;ubuntu-bug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Ubuntu. However, check &lt;a
+                href=&quot;https://bugs.launchpad.net/ubuntu/+source/apache2&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to their respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
