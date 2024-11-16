@@ -12,6 +12,7 @@ window.addEventListener("load", function () {
     "Friday",
     "Saturday",
   ];
+
   function setLight() {
     root.style.setProperty("--primary", "rgb(132, 185, 206)");
     root.style.setProperty("--secondary", "rgb(68, 108, 124)");
@@ -297,10 +298,10 @@ window.addEventListener("load", function () {
     .querySelector("#forecast-button")
     .addEventListener("click", forecastAPI);
   let tempCode;
+  useCurrentData();
+  useForecastData();
   setTimeout(() => {
     document.querySelector(".container").style.display = "block";
     document.querySelector(".spinner-wrapper").style.display = "none";
-    useCurrentData();
-    useForecastData();
   }, 1000);
 });
