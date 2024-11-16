@@ -10,6 +10,7 @@ body {
 .container {
   width: 80%;
   margin: 3rem auto;
+  display: none;
 }
 
 hr {
@@ -17,6 +18,7 @@ hr {
   border: 0;
   border-top: solid gray 1px;
 }
+
 .weather-wrapper {
   width: 100%;
   display: flex;
@@ -84,6 +86,11 @@ hr {
   width: 100%;
 }
 
+.spinner-border {
+  height: 5rem !important;
+  width: 5rem !important;
+  border-width: 5px !important;
+}
 .wind-main {
   display: flex;
   width: 90%;
@@ -235,6 +242,12 @@ hr {
 compass design used from https://cssdeck.com/labs/building-a-css3-compass
 because I couldnt find an icon online
 */
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 #compass {
   width: 200px;
   height: 200px;
