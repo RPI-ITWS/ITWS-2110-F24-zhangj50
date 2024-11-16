@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+}
+h2 {
+  font-size: 2.5em;
+  margin: auto;
+  padding: 2rem;
+}
+.links {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
