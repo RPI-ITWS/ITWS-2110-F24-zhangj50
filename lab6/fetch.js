@@ -223,9 +223,9 @@ window.addEventListener("load", function () {
           [minHue, minBrightness] = hue(dayInfo.feelslikemin);
           [maxHue, maxBrightness] = hue(dayInfo.feelslikemax);
           currBar.style.backgroundImage = `linear-gradient(
-   to right,
-   hsla(${minHue}, 100%, 59%, 1),
-   hsla(${maxHue}, 100%, 59%, 1)`;
+          to right,
+          hsla(${minHue}, 100%, 59%, 1),
+          hsla(${maxHue}, 100%, 59%, 1)`;
         }
       })
       .catch((error) => {
