@@ -301,6 +301,6 @@ window.addEventListener("load", function () {
   useForecastData();
   setTimeout(() => {
     document.querySelector(".container").style.display = "block";
-    document.querySelector(".spinner-wrapper").style.display = "none";
+    document.querySelector(".loader-wrapper").style.display = "none";
   }, 1000);
 });
