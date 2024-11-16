@@ -264,7 +264,7 @@ because I couldnt find an icon online
   margin: 0 auto;
   position: relative;
   border: 10px solid #777;
-  background: radial-gradient(ellipse cover, white);
+  background: radial-gradient(ellipse farthest-corner, white, transparent);
   box-shadow: 0 0 4px #000, 0 0 1px 8px #ccc, 5px 10px 15px #48436f;
   color: var(--text);
 }
@@ -365,7 +365,11 @@ because I couldnt find an icon online
   background: radial-gradient(farthest-side, black 94%, #0000) top/12px 12px
       no-repeat,
     conic-gradient(#0000 30%, black);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 12px), #000 0);
+  mask-image: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 12px),
+    black 0
+  );
   animation: l13 1s infinite linear;
 }
 @keyframes l13 {
